@@ -1,12 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+    font-family: FiraCode;
+    src: url(../public/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Karla;
+    src: url(../public/fonts/Karla/Karla-VariableFont_wght.ttf) format('truetype');
+}
+
 body{
-    background: linear-gradient(90deg, rgba(28, 28, 28, 1) 0%, rgba(8, 70, 59, 1) 100%);
+    background: linear-gradient(40deg,rgba(28, 28, 28, 1) 38%, rgba(8, 70, 59, 1) 100%);
     color: #ffffff;
-    margin-left: 96px;
-    margin-right: 96px;
+
     margin-top: 48px;
     min-height: 100vh;
+    font-family: FiraCode;
+    width: 100%;
+    overflow-x: hidden;
+
+    
 }
 
 a{
