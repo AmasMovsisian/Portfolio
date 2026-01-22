@@ -111,23 +111,38 @@ p {
     gap: 24px;
 }
 
+.about-me-text-icons {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+
+  &:hover {
+    .about-me-icons {
+      scale: 1.1;
+    }
+
+    .about-me-text {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
 .about-me-icons {
-    width: 32px;
-    height: 32px;
-    padding-top: 20px;
-    padding-bottom: 16px;
+  width: 32px;
+  height: 32px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  transition: scale 0.2s ease;
 }
 
 .about-me-text {
-    font-family: Karla;
-    font-size: 18px;
-    line-height: 120%;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
-    background: none;
-}
-
-.about-me-text:hover {
-    color: rgba(255, 255, 255, 1);
-    cursor: default;
+  font-family: Karla;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  background: none;
+  user-select: none;
+  cursor: default;
+  transition: color 0.2s ease;
 }

@@ -28,9 +28,7 @@ nav {
 .language-switcher {
     display: flex;
     justify-content: space-between;
-    border: solid;
-    border-color: #3DCFB6;
-    border-width: 2px;
+    border: 2px solid #3DCFB6;
     border-radius: 50px;
     margin-right: 24px;
 }
@@ -73,7 +71,7 @@ a {
     transition: opacity 0.25s ease-in-out;
 }
 
-.point_hover a:hover+.point {
+.point_hover a:hover + .point {
     opacity: 1;
     visibility: visible;
 }
@@ -90,16 +88,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 h1 {
     font-size: 128px;
     font-weight: 700;
     font-family: Karla;
-    letter-spacing: -2%;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin: 12px 0;
 }
 
 h3 {
@@ -111,14 +106,12 @@ h3 {
 
 .hero-actions {
     display: flex;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin: 0 24px;
 }
 
 .hero-button {
     z-index: 10;
     border: 1px solid #fff;
-    outline: none;
     background: none;
     color: #fff;
     padding: 10px 24px;
@@ -126,7 +119,6 @@ h3 {
     margin: 0 24px;
     overflow: hidden;
     position: relative;
-
 }
 
 .hero-button:hover {
@@ -137,7 +129,6 @@ h3 {
 
 .btn-text {
     display: inline-block;
-    transition: color 0.3s ease;
 }
 
 .hero-button:hover .btn-text {
@@ -148,38 +139,59 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    z-index: 9999;
     transform: translateY(-220px);
     margin-left: 96px;
     margin-right: 96px;
-
 }
 
 .hero-side-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 24px;
 }
 
 .hero-side-logos {
-    width: 32px;
+    width: 46px;
     height: 32px;
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+
+.hero-side-logos.github {
+    background-image: url("/assets/Hero_Section/GitHub_Logo.png");
+}
+
+.hero-side-logos.github:hover {
+    background-image: url("/assets/Hero_Section/GitHub_Logo_hovered.png");
+    background-position: left center;
+    transform: translateX(6.5px);
+}
+
+.hero-side-logos.mail {
+    background-image: url("/assets/Hero_Section/Mail_Logo.png");
+}
+
+.hero-side-logos.mail:hover {
+    background-image: url("/assets/Hero_Section/Mail_Logo_hovered.png");
+    background-position: center center;
+    transform: translateX(6px);
 }
 
 .scroll-indicator {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .scroll-arrow {
     border: 1px solid #3DCFB6;
-    padding: 10px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 10px;
     border-radius: 32px;
     display: flex;
     justify-content: center;
@@ -190,18 +202,15 @@ h3 {
     width: 1px;
     height: 240px;
     background-color: #3DCFB6;
-    align-self: center;
 }
 
 .scroll-line-right {
     width: 1px;
     height: 186px;
     background-color: #ffffff;
-    align-self: center;
 }
 
 .arrow-icon {
-    display: inline-block;
     animation: arrowFloat 1.2s ease-in-out infinite;
     height: 28px;
 }
@@ -209,31 +218,17 @@ h3 {
 .email-link {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    transform-origin: center;
     margin: 0;
+    align-self: center;
 }
 
 .email-link:hover {
     color: #3DCFB6;
 }
 
-.ticker {
-    text-align: center;
-    background-color: #585858;
-    color: #3DCFB6;
-    transform: rotate(-3deg);
-}
-
-.ticker-text {
-    display: inline-block;
-    animation: ticker-move 8s linear infinite;
-}
-
 .slider-infinite {
-    z-index: 9999;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.12);
-    transform-origin: center;
     backdrop-filter: blur(5.3px);
     width: 120vw;
     left: 50%;
@@ -269,50 +264,19 @@ h3 {
 }
 
 @keyframes loopText {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    40% {
-        transform: translateX(150%);
-        opacity: 0;
-    }
-    41% {
-        transform: translateX(-150%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+    0% { transform: translateX(0); opacity: 1; }
+    40% { transform: translateX(150%); opacity: 0; }
+    41% { transform: translateX(-150%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes arrowFloat {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(8px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes ticker-move {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(100%);
-    }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+    100% { transform: translateY(0); }
 }
 
 @keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
