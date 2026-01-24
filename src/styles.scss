@@ -10,19 +10,22 @@
     src: url(../public/fonts/Karla/Karla-VariableFont_wght.ttf) format('truetype');
 }
 
-body{
-    background: linear-gradient(40deg,rgba(28, 28, 28, 1) 55%, rgba(8, 70, 59, 1) 100%);
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(40deg, rgba(28, 28, 28, 1) 55%, rgba(8, 70, 59, 1) 100%);
     color: #ffffff;
-    margin-top: 48px;
     min-height: 100vh;
     font-family: FiraCode;
     width: 100%;
     overflow-x: hidden;
 
-    
+
 }
 
-a{
+a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;

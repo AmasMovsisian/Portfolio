@@ -1,0 +1,254 @@
+.skills-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 96px;
+  transform: translateY(-260px);
+  background-image: url("/assets/Skills/Skills BG.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+}
+
+
+.technologies-container {
+    width: 50%;
+    max-width: 520px;
+}
+
+.icons-container {
+    width: 632px;
+    height: 428px;
+    gap: 72px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.icons-and-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 88px;
+    text-align: center;
+}
+
+.icons {
+    width: 64px;
+    height: 64px;
+    transition: all 125ms ease-in-out;
+}
+
+.icons:hover {
+    scale: 1.07;
+}
+
+.icon-growth {
+    width: 64px;
+    height: 64px;
+    transition: all 125ms ease-in-out;
+}
+
+.growth-interest {
+    width: 188px;
+    height: 129px;
+    z-index: 9999;
+}
+
+.icons-names {
+    text-align: center;
+}
+
+.growth-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.growth-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .growth-interest {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 188px;
+        height: auto;
+
+        opacity: 0;
+        pointer-events: none;
+        z-index: 10;
+
+        transition: opacity 150ms ease-in-out;
+    }
+
+    .icon-growth {
+        width: 64px;
+        height: 64px;
+        transition: transform 125ms ease-in-out;
+    }
+
+    .icons-names {
+        transition: color 125ms ease-in-out;
+    }
+
+    &:hover {
+        .growth-interest {
+            opacity: 1;
+        }
+
+        .icon-growth {
+            transform: scale(1.07);
+        }
+
+        .icons-names {
+            color: #3DCFB6;
+        }
+    }
+}
+
+
+
+.technologies {
+    font-family: Karla;
+    font-size: 24px;
+    font-weight: 500;
+    color: #3DCFB6;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 446px;
+    background: #3DCFB61A;
+    border-radius: 30px;
+    border: solid;
+    border-color: #3DCFB6;
+    border-width: 1px;
+    padding: 32px;
+    width: 100%;
+}
+
+.skill-box-text {
+    width: 456px;
+    height: auto;
+}
+
+.skill-box-text-bottom {
+    width: 332px;
+    height: 83px;
+    padding-top: 32px;
+}
+
+h1 {
+    letter-spacing: -0.03em;
+    font-family: FiraCode;
+    background: none;
+    color: #3DCFB6;
+    font-size: 64px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+h2 {
+    font-family: FiraCode;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 16px;
+}
+
+p {
+    font-family: Karla;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-footer-text {
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+}
+
+.colored-text {
+    font-family: FiraCode;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: #3DCFB6;
+}
+
+.hero-button {
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    color: #3DCFB6;
+    border-color: #3DCFB6;
+}
+
+.btn-text {
+    display: inline-block;
+    font-family: Karla;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.hero-button:hover .btn-text {
+    animation: loopText 0.5s ease-in-out forwards;
+}
+
+@keyframes loopText {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    41% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
