@@ -15,12 +15,24 @@ import { PortfolioDialog } from './components/portfolio-dialog/portfolio-dialog'
 export class App {
   protected readonly title = signal('Portfolio');
 
-  iconsPath: string[] = [
+  iconsPathJoin: string[] = [
     "/assets/Portfolio-Dialog/Join/Angular.png",
     "/assets/Portfolio-Dialog/Join/CSS.png",
     "/assets/Portfolio-Dialog/Join/Firebase.png",
     "/assets/Portfolio-Dialog/Join/HTML.png",
     "/assets/Portfolio-Dialog/Join/TypeScript.png",
   ];
+
+  iconsPathElPolloLoco: string[] = [
+    "/assets/Portfolio-Dialog/ElPolloLoco/HTML.png",
+    "/assets/Portfolio-Dialog/ElPolloLoco/CSS.png",
+    "/assets/Portfolio-Dialog/ElPolloLoco/JavaScript.png",
+  ]
+
+  iconsPathElDaBubble: string[] = [
+    "/assets/Portfolio-Dialog/ElPolloLoco/HTML.png",
+    "/assets/Portfolio-Dialog/ElPolloLoco/CSS.png",
+    "/assets/Portfolio-Dialog/ElPolloLoco/JavaScript.png",
+  ]
 
 }

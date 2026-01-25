@@ -53,8 +53,9 @@ h1 {
     font-weight: 700;
     font-size: 64px;
     letter-spacing: -3%;
-    line-height: 80%;
+    line-height: 1; /* Statt 80% */
     color: #ffffff;
+    white-space: nowrap; /* Verhindert Zeilenumbruch */
 }
 
 h2 {
