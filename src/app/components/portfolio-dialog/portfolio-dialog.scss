@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    align-self: center;
+    min-height: 100vh;
+
+}
+
+.dialog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1248px;
+    height: 656px;
+
+    border-radius: 30px;
+    border: solid;
+    border-width: 1px;
+    border-color: #3DCFB6;
+
+    background: linear-gradient(40deg, rgba(28, 28, 28, 1) 46%, rgba(8, 70, 59, 1) 100%);
+
+
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 480px;
+    height: 474px;
+
+    padding-right: 64px;
+    padding-left: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    gap: 32px;
+}
+
+.project-number {
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 128px;
+    letter-spacing: -2%;
+    color: #3DCFB6;
+}
+
+h1 {
+    font-family: FiraCode;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: -3%;
+    line-height: 80%;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: FiraCode;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #3DCFB6;
+}
+
+p {
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+}
+
+.icon {
+    height: 24px;
+    width: auto;
+    margin-right: 16px;
+}
+
+.main-img {
+    width: 520px;
+    height: 370px;
+}
+
+.dialog-btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dialog-button {
+    z-index: 10;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 100px;
+    position: relative;
+    margin-right: 32px;
+    cursor: pointer;
+
+    &:hover {
+        color: #3DCFB6;
+        border-color: #3DCFB6;
+
+        .btn-arrow {
+            transform: translate(3px, -3px) scale(1.15);
+        }
+    }
+}
+
+.btn-text-arrow {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-text {
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.btn-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+
+    padding-right: 64px;
+    padding-left: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.close {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 64px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        content: url("/assets/Portfolio-Dialog/close_hovered.png");
+        scale: 1.5;
+        cursor: pointer;
+    }
+}
+
+.next-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 64px;
+
+    &:hover {
+        .next-arrow {
+            transform: translateX(4px) scale(1.125); // 
+        }
+
+        .next-project-txt {
+            color: #ffffff;
+        }
+    }
+}
+
+.next-project-txt {
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #3DCFB6;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.next-arrow {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
