@@ -1,0 +1,126 @@
+.portfolio-container {
+  min-height: 100vh;
+}
+
+.portfolio-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+.portfolio-main-text h1 {
+  font-family: FiraCode;
+  font-size: 64px;
+  font-weight: 700;
+  color: #3DCFB6;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.portfolio-main-text p {
+  font-family: Karla;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.portfolio {
+  font-family: Karla;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3DCFB6;
+  margin-bottom: 10px;
+}
+
+.main-projects {
+  display: flex;
+  flex-direction: column;
+  padding-left: 96px;
+  padding-right: 96px;
+  margin-top: 64px;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-image {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 315px;
+  height: 212px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%) translateY(0px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-text:hover ~ .project-image {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-50%) translateY(0);
+}
+
+.project-text {
+  width: 1020px;
+}
+
+.project-text-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #3DCFB6;
+  border-bottom: 1px solid #3DCFB6;
+  transition: background-color 125ms ease-in-out;
+}
+
+.project-text-inner:hover {
+  background-color: #3DCFB64D;
+  cursor: pointer;
+}
+
+.project-text-inner h2 {
+  padding-left: 32px;
+  margin: 0;
+  font-family: FiraCode;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-text-inner p {
+  padding-right: 32px;
+  margin: 0;
+  text-align: right;
+  font-family: Karla;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.pipe {
+  color: #3DCFB6;
+  padding: 0 4px;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-text-inner:hover .arrow {
+  opacity: 1;
+}
