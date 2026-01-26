@@ -1,30 +1,9 @@
 <app-header></app-header>
 <app-about-me></app-about-me>
 <app-skills></app-skills>
-<app-portfolio></app-portfolio>
-
-<app-portfolio-dialog
-  projectNumber="01"
-  title="Join"
-  message="Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. "
-  mainImagePath="/assets/Portfolio-Dialog/Join/Join-img.png"
-  [icons]="iconsPathJoin">
-</app-portfolio-dialog>
-
-<app-portfolio-dialog
-  projectNumber="02"
-  title="El Pollo Loco"
-  message="TJump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
-  mainImagePath="/assets/Portfolio-Dialog/ElPolloLoco/ElPolloLoco-img.png"
-  [icons]="iconsPathElPolloLoco">
-</app-portfolio-dialog>
-
-<app-portfolio-dialog
-  projectNumber="03"
-  title="DABubble"
-  message="This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
-  mainImagePath="/assets/Portfolio-Dialog/DaBubble/DaBubble.png"
-  [icons]="iconsPathElDaBubble">
-</app-portfolio-dialog>
-
+<app-portfolio
+  (openJoinDialog)="openJoinDialog()"
+  (openElPolloLocoDialog)="openElPolloLocoDialog()"
+  (openDaBubbleDialog)="openDaBubbleDialog()">
+</app-portfolio>
 <router-outlet />

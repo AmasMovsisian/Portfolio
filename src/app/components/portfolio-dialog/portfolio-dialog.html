@@ -20,27 +20,27 @@
     <div class="dialog-btns">
       <button class="dialog-button">
         <div class="btn-text-arrow">
-        <span class="btn-text">GitHub</span>
-        <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow">
-         </div>
+          <span class="btn-text">GitHub</span>
+          <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow">
+        </div>
       </button>
 
       <button class="dialog-button">
         <div class="btn-text-arrow">
-        <span class="btn-text">Live Test</span>
-        <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow">
-         </div>
+          <span class="btn-text">Live Test</span>
+          <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow">
+        </div>
       </button>
     </div>
 
   </div>
 
   <div class="image-container">
-    <img class="close" src="/assets/Portfolio-Dialog/close.png" alt="close">
+    <img class="close" src="/assets/Portfolio-Dialog/close.png" alt="close" (click)="closeDialog()">
 
     <img class="main-img" [src]="mainImagePath" alt="project image">
 
-    <div class="next-project">
+    <div class="next-project" (click)="goToNextProject()">
       <span class="next-project-txt">Next project</span>
       <img class="next-arrow" src="/assets/Portfolio-Dialog/arrow.png" alt="arrow">
     </div>
