@@ -1,0 +1,40 @@
+<section class="references-container">
+    <h2>What my colleagues say about me</h2>
+
+    <div class="all-comments">
+        @for (comment of comments; track comment.id; let i = $index) {
+            <div class="comment-box"
+                 [id]="comment.id"
+                 [class]="getPositionClass(i)">
+                <img class="quotes" src="/assets/References/quotes.png" alt="quotes">
+
+                <p>{{comment.text}}</p>
+
+                <div class="references-footer">
+                    <div class="line"></div>
+                    <p>{{comment.author}}</p>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="slider-nav">
+        <img class="arrow-left" 
+             src="/assets/References/arrow_left.png" 
+             alt="arrow"
+             (click)="prevSlide()">
+        
+        @for (comment of comments; track comment.id; let i = $index) {
+            <a (click)="goToSlide(i)">
+                <img class="dots" 
+                     [src]="currentIndex === i ? '/assets/References/dot_hovered.png' : '/assets/References/dot.png'" 
+                     alt="dot">
+            </a>
+        }
+        
+        <img class="arrow-right" 
+             src="/assets/References/arrow_right.png" 
+             alt="arrow"
+             (click)="nextSlide()">
+    </div>
+</section>

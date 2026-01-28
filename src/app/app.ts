@@ -6,6 +6,7 @@ import { AboutMe } from './components/about-me/about-me';
 import { Skills } from './components/skills/skills';
 import { Portfolio } from './components/portfolio/portfolio';
 import { PortfolioDialog } from './components/portfolio-dialog/portfolio-dialog';
+import { References } from './components/references/references';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { PortfolioDialog } from './components/portfolio-dialog/portfolio-dialog'
     AboutMe, 
     Skills, 
     Portfolio, 
-    PortfolioDialog
+    PortfolioDialog,
+    References
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
