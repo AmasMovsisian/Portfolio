@@ -4,6 +4,12 @@
     align-items: center;
     margin-bottom: 128px;
     overflow: hidden;
+    
+}
+
+.max-width{
+  margin: 0 auto;
+  margin-bottom: 128px;
 }
 
 .all-comments{
@@ -24,7 +30,7 @@
     height: 146px;
     width: 548px;
     border-radius: 30px;
-    background: #3DCFB61A;
+    background: #26524b;
     border: 1px solid #3DCFB6;
     padding: 64px;
     transition: all 0.5s ease-in-out;

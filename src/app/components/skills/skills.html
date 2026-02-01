@@ -1,40 +1,42 @@
-<div class="skills-container">       
-    <div class="technologies-container">
-        <span class="technologies">Technologies</span>
+<section class="skills">
+    <div class="skills-container max-width">       
+        <div class="technologies-container">
+            <span class="technologies">Technologies</span>
 
-        <div class="skills-box">
-            <div class="skill-box-text">
-                <h1>Skill Set</h1>
-                <p>A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies. Show how important it is for you to keep up with the rapid changes in web development.</p>
-                <div class="skill-box-text-bottom">
-                    <h2>You need <span class="colored-text">another skill?</span></h2>
-                    <span class="skills-footer-text">Feel free to contact me. I look forward to expanding on my previous knowledge.</span>
+            <div class="skills-box">
+                <div class="skill-box-text">
+                    <h1>Skill Set</h1>
+                    <p>A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies. Show how important it is for you to keep up with the rapid changes in web development.</p>
+                    <div class="skill-box-text-bottom">
+                        <h2>You need <span class="colored-text">another skill?</span></h2>
+                        <span class="skills-footer-text">Feel free to contact me. I look forward to expanding on my previous knowledge.</span>
+                    </div>
                 </div>
-            </div>
 
-            <button class="hero-button">
-                <span class="btn-text">Let's Talk</span>
-            </button>
+                <button class="hero-button">
+                    <span class="btn-text">Let's Talk</span>
+                </button>
+            </div>
         </div>
+
+        <div class="icons-container">
+            @for (icon of frontEndIcons; track icon.name) {
+                <div class="icons-and-names">
+                    <img class="icons" [src]="icon.path" [alt]="icon.name">
+                    <p class="icons-names">{{ icon.name }}</p>
+                </div>
+            }
+            <div class="icons-and-names growth-item">
+        <img class="growth-interest"
+            src="/assets/Skills/Growth Mindset/Growth Interest.png"
+            alt="">
+
+        <img class="icon-growth"
+            src="/assets/Skills/Growth Mindset/Growth.png"
+            alt="">
+
+        <p class="icons-names">Growth Mindset</p>
     </div>
-
-    <div class="icons-container">
-        @for (icon of frontEndIcons; track icon.name) {
-            <div class="icons-and-names">
-                <img class="icons" [src]="icon.path" [alt]="icon.name">
-                <p class="icons-names">{{ icon.name }}</p>
-            </div>
-        }
-        <div class="icons-and-names growth-item">
-    <img class="growth-interest"
-         src="/assets/Skills/Growth Mindset/Growth Interest.png"
-         alt="">
-
-    <img class="icon-growth"
-         src="/assets/Skills/Growth Mindset/Growth.png"
-         alt="">
-
-    <p class="icons-names">Growth Mindset</p>
-</div>
-    </div> 
-</div>
+        </div> 
+    </div>
+</section>

@@ -1,10 +1,19 @@
+.about-me{
+    background-color: #1C1C1C;
+    margin-bottom: 128px;
+}
+
+.max-width{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .about-me-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 96px;
   padding-right: 96px;
-  background-color: #1C1C1C;
 }
 
 .about-me-box-container {

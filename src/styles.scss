@@ -15,9 +15,10 @@
 }
 
 body {
+
     background-color: #1C1C1C;
+    background: linear-gradient(40deg, rgba(28, 28, 28, 1) 80%, rgba(8, 70, 59, 1) 100%);
     color: #ffffff;
-    min-height: 100vh;
     font-family: FiraCode;
     width: 100%;
     overflow-x: hidden;

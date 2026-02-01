@@ -8,6 +8,7 @@ import { Portfolio } from './components/portfolio/portfolio';
 import { PortfolioDialog } from './components/portfolio-dialog/portfolio-dialog';
 import { References } from './components/references/references';
 import { ContactMe } from './components/contact-me/contact-me';
+import { Footer } from './shared/footer/footer';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,8 @@ import { ContactMe } from './components/contact-me/contact-me';
     Portfolio, 
     PortfolioDialog,
     References,
-    ContactMe
+    ContactMe,
+    Footer
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

@@ -1,0 +1,107 @@
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding-left: 96px;
+    padding-right: 96px;
+
+
+}
+
+.max-width{
+    max-width: 1920px;
+    margin: 0 auto;
+        margin-bottom: 64px;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.footer-logo{
+    width: 60px;
+    height: 108px;
+    
+    margin-bottom: 16px;
+}
+
+p{
+font-family: FiraCode;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 120%;
+letter-spacing: 0%;
+
+color: rgba(255, 255, 255, 0.8);
+
+padding-bottom: 8px;
+
+}
+
+.amas-movsisian{
+font-family: FiraCode;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 120%;
+letter-spacing: 0%;
+
+color: #3DCFB6;
+}
+
+.links-to-networking{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.link-and-img {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 8px;
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        background-image: url("/assets/Footer/dot.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+
+
+        opacity: 0; 
+        visibility: hidden;
+
+        transition: all 125ms ease-in-out;
+    }
+
+    a {
+        font-family: Karla;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #ffffff;
+
+        transition: all 125ms ease-in-out;
+    }
+
+    &:hover {
+        a {
+            color: #3DCFB6;
+        }
+
+        .dot {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+

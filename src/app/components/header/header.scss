@@ -1,8 +1,11 @@
 .main-header {
-    background: linear-gradient(40deg, rgba(28, 28, 28, 1) 46%, rgba(8, 70, 59, 1) 100%);
-    min-height: 100vh;
     height: 900px;
     padding-bottom: 20px;
+}
+
+.max-width{
+        max-width: 1920px;
+    margin: 0 auto;
 }
 
 nav {
