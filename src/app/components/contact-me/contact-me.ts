@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './contact-me.scss',
 })
 export class ContactMe {
+  isChecked = false;
 
+  toggleCheckbox() {
+    this.isChecked = !this.isChecked;
+  }
 }

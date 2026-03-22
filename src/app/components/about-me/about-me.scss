@@ -112,16 +112,14 @@ p {
   display: flex;
   gap: 16px;
   align-items: flex-start;
+}
 
-  &:hover {
-    .about-me-icons {
-      scale: 1.1;
-    }
+.about-me-text-icons:hover .about-me-icons {
+  scale: 1.1;
+}
 
-    .about-me-text {
-      color: rgba(255, 255, 255, 1);
-    }
-  }
+.about-me-text-icons:hover .about-me-text {
+  color: rgba(255, 255, 255, 1);
 }
 
 .about-me-icons {
@@ -141,4 +139,106 @@ p {
   user-select: none;
   cursor: default;
   transition: color 0.2s ease;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width:1500px) {
+
+  .about-me-image{
+    margin-top: 64px;
+  }
+
+  .about-me-container{
+    flex-direction: column;
+  }
+
+  /* Dauerhaft sichtbar */
+  .about-me-image::before {
+    opacity: 1 !important;
+    transform: translate(-12px, 14px) !important;
+    transition: none !important;
+  }
+
+  /* Hover komplett neutralisiert */
+  .about-me-image:hover::before {
+    opacity: 1 !important;
+    transform: translate(-18px, 14px) !important;
+  }
+
+  /* Hover für Icons deaktivieren */
+  .about-me-text-icons:hover .about-me-icons {
+    scale: 1 !important;
+  }
+
+  .about-me-text-icons:hover .about-me-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  .about-me-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  background: repeating-linear-gradient(
+    -135deg,
+    rgba(0, 255, 200, 0.8) 0 2px,
+    transparent 2px 15px
+  );
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: -1;
+}
+}
+
+@media (max-width:700px) {
+  .about-me-image{
+    width: 512px;
+    height: 512px;
+  }
+}
+
+@media (max-width:624px) {
+  .about-me-image{
+    width: 468px;
+    height: 468px;
+  }
+}
+
+@media (max-width:572px) {
+  .about-me-image{
+    width: 448px;
+    height: 448px;
+  }
+}
+
+@media (max-width:532px) {
+  .about-me-image{
+    width: 416px;
+    height: 416px;
+  }
+}
+
+@media (max-width:516px) {
+  .about-me-image{
+    width: 396px;
+    height: 396px;
+  }
+}
+
+@media (max-width:460px) {
+  .about-me-image{
+    width: 346px;
+    height: 346px;
+  }
+}
+
+@media (max-width:380px) {
+  .about-me-image{
+    width: 260px;
+    height: 260px;
+  }
 }

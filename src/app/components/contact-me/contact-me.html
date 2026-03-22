@@ -1,7 +1,5 @@
 <section class="contact-me-container max-width">
-
     <div class="contact-me-text-container">
-
         <h3>Contact me</h3>
         <h1>Let's work <br> togheter</h1>
         <h2>Got a problem to solve?</h2>
@@ -9,7 +7,6 @@
             Show that you will add value to their projects through your work.</p>
 
         <span class="need-dev">Need a Frontend developer? <span class="lets-talk">Let’s talk!</span></span>
-
     </div>
 
     <div class="contact-me-form">
@@ -25,9 +22,12 @@
             <input type="text" name="" id="" placeholder="What do you need to develop?">
             <div class="line"></div>
 
-            <div class="checkbox-container">
-                <input type="checkbox" id="checkbox"/>
-                <span class="checkmark"></span>
+            <div class="checkbox-container" (click)="toggleCheckbox()">
+                <div class="checkmark" [class.checked]="isChecked">
+                    @if (isChecked) {
+                        <span class="checkmark-icon"></span>
+                    }
+                </div>
                 <span class="checkbox-text">I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</span>
             </div>
 
