@@ -1,9 +1,9 @@
-.about-me{
-    background-color: #1C1C1C;
-    margin-bottom: 128px;
+.about-me {
+  background-color: #1c1c1c;
+  margin-bottom: 128px;
 }
 
-.max-width{
+.max-width {
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 224px;
+  // padding-top: 224px;
 }
 
 .about-me-image {
@@ -30,10 +30,11 @@
   height: 568px;
   padding-top: 0;
   z-index: 0;
+  box-sizing: border-box;
 }
 
 .about-me-image::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: 30px;
@@ -44,7 +45,9 @@
   );
   opacity: 0;
   transform: translate(0, 0);
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
   z-index: -1;
 }
 
@@ -54,7 +57,7 @@
 }
 
 .about-me-image::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: 30px;
@@ -69,27 +72,27 @@
   font-family: Karla;
   font-size: 24px;
   font-weight: 500;
-  color: #3DCFB6;
+  color: #3dcfb6;
   margin-bottom: 20px;
 }
 
 .about-me-box {
   width: 568px;
-  height: 568px;
-  background: #3DCFB61A;
+  // height: 568px;
+  box-sizing: border-box;
+  background: #3dcfb61a;
   border-radius: 30px;
-  border: 1px solid #3DCFB6;
+  border: 1px solid #3dcfb6;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 32px;
 }
 
 h1 {
   font-family: FiraCode;
-  color: #3DCFB6;
+  color: #3dcfb6;
   font-size: 64px;
   font-weight: 700;
   margin: 0;
@@ -139,106 +142,197 @@ p {
   user-select: none;
   cursor: default;
   transition: color 0.2s ease;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
 
-@media (max-width:1500px) {
-
-  .about-me-image{
+@media (max-width: 1500px) {
+  .about-me-image {
     margin-top: 64px;
   }
-
-  .about-me-container{
+  .about-me-container {
     flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
   }
-
-  /* Dauerhaft sichtbar */
+  .about-me-box-container {
+    padding-top: 64px;
+  }
   .about-me-image::before {
     opacity: 1 !important;
     transform: translate(-12px, 14px) !important;
     transition: none !important;
   }
-
-  /* Hover komplett neutralisiert */
   .about-me-image:hover::before {
     opacity: 1 !important;
     transform: translate(-18px, 14px) !important;
   }
-
-  /* Hover für Icons deaktivieren */
   .about-me-text-icons:hover .about-me-icons {
     scale: 1 !important;
   }
-
   .about-me-text-icons:hover .about-me-text {
     color: rgba(255, 255, 255, 0.8) !important;
   }
-
   .about-me-image::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 30px;
-  background: repeating-linear-gradient(
-    -135deg,
-    rgba(0, 255, 200, 0.8) 0 2px,
-    transparent 2px 15px
-  );
-  opacity: 0;
-  transform: translate(0, 0);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  z-index: -1;
-}
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    background: repeating-linear-gradient(
+      -135deg,
+      rgba(0, 255, 200, 0.8) 0 2px,
+      transparent 2px 15px
+    );
+    opacity: 0;
+    transform: translate(0, 0);
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
+    z-index: -1;
+  }
 }
 
-@media (max-width:700px) {
-  .about-me-image{
+@media (max-width: 700px) {
+  .about-me-image {
     width: 512px;
     height: 512px;
   }
+  .about-me-box {
+    width: 512px;
+    height: auto;
+  }
+  h1 {
+    font-size: 56px;
+  }
+  p,
+  .about-me-text {
+    font-size: 16px;
+  }
 }
 
-@media (max-width:624px) {
-  .about-me-image{
+@media (max-width: 624px) {
+  .about-me-image {
     width: 468px;
     height: 468px;
   }
+  .about-me-box {
+    width: 468px;
+    height: auto;
+  }
+  h1 {
+    font-size: 48px;
+  }
 }
 
-@media (max-width:572px) {
-  .about-me-image{
+@media (max-width: 572px) {
+  .about-me-image {
     width: 448px;
     height: 448px;
   }
+  .about-me-box {
+    width: 448px;
+    height: auto;
+  }
 }
 
-@media (max-width:532px) {
-  .about-me-image{
+@media (max-width: 532px) {
+  .about-me-image {
     width: 416px;
     height: 416px;
   }
+  .about-me-box {
+    width: 416px;
+    height: auto;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  p,
+  .about-me-text {
+    font-size: 15px;
+  }
 }
 
-@media (max-width:516px) {
-  .about-me-image{
+@media (max-width: 516px) {
+  .about-me-image {
     width: 396px;
     height: 396px;
   }
-}
-
-@media (max-width:460px) {
-  .about-me-image{
-    width: 346px;
-    height: 346px;
+  .about-me-box {
+    width: 396px;
+    height: auto;
   }
 }
 
-@media (max-width:380px) {
-  .about-me-image{
+@media (max-width: 460px) {
+  .about-me-image {
+    width: 346px;
+    height: 346px;
+  }
+  .about-me-box {
+    width: 346px;
+    height: auto;
+    padding: 24px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  p,
+  .about-me-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-me-image {
+    width: 280px;
+    height: 280px;
+  }
+  .about-me-box {
+    width: 280px;
+    height: auto;
+    padding: 20px;
+  }
+  .who-i-am {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 36px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  p,
+  .about-me-text {
+    font-size: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .about-me-icons {
+    width: 24px;
+    height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-me-image {
     width: 260px;
     height: 260px;
+  }
+  .about-me-box {
+    width: 260px;
+    height: auto;
+    padding: 16px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  p,
+  .about-me-text {
+    font-size: 12px;
   }
 }
