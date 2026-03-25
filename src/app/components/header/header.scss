@@ -1,6 +1,11 @@
+body{
+
+}
+
 .main-header {
-  height: 900px;
+  min-height: 900px;
   padding-bottom: 20px;
+    background: linear-gradient(40deg, rgba(28, 28, 28, 1) 50%, rgba(8, 70, 59, 1) 100%);
 }
 
 .test {
@@ -109,7 +114,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 12px;
-  flex-grow: 1;
+
 }
 
 .hero-heading {
@@ -376,7 +381,7 @@ h3 {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 62px;
   }
