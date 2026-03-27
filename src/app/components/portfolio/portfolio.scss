@@ -1,9 +1,12 @@
-.portfolio-container {}
 
 .max-width {
   max-width: 1920px;
   margin: 0 auto;
 }
+.portfolio-container {
+  margin-bottom: 128px;
+}
+
 
 .portfolio-text-container {
   display: flex;
@@ -169,7 +172,7 @@
   .portfolio-container{
     display: block;
   }
-  
+
   .portfolio-text-container,
   .main-projects {
     padding-left: 16px;

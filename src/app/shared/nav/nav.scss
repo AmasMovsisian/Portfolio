@@ -1,0 +1,123 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 96px;
+  margin-left: 96px;
+  margin-right: 96px;
+  height: 98px;
+}
+
+.nav-logo {
+  width: 60px;
+  height: 108px;
+}
+
+.mobile {
+  display: none;
+}
+
+.hamburger-menu {
+  width: 48px;
+  height: 48px;
+  display: none;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.language-switcher {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #3dcfb6;
+  border-radius: 50px;
+  margin-right: 24px;
+}
+
+.language-option {
+  outline: none;
+  border: none;
+  background: none;
+  color: aliceblue;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.language-option:hover {
+  border-radius: 50px;
+  background-color: #3dcfb6;
+  cursor: pointer;
+}
+
+a {
+  margin-right: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.point_hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.point {
+  margin-top: 6px;
+  margin-right: 24px;
+  width: 7px;
+  height: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.point_hover a:hover + .point {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@media (max-width: 1400px) {
+  nav {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-logo {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    scale: 0.8;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-left {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  nav {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

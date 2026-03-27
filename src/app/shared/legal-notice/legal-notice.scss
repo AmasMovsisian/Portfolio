@@ -1,0 +1,75 @@
+.main-container {
+  background: linear-gradient(40deg, rgba(28, 28, 28, 1) 40%, rgba(8, 70, 59, 1) 100%);
+  min-height: 100vh;
+}
+
+.back-btn {
+  display: none;
+  width: 18px;
+  height: 18px;
+  margin-right: 96px;
+  margin-left: 96px;
+  background-image: url('/assets/arrow_back.png');
+  background-position: center;
+  background-size: contain;
+}
+
+.main-text-container {
+  margin-right: 96px;
+  margin-left: 96px;
+}
+
+.text {
+  margin-bottom: 24px;
+}
+
+.date {
+  margin-bottom: 64px;
+}
+
+h1 {
+  align-self: center;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+p {
+  color: #3dcfb6;
+}
+ul li {
+  color: #3dcfb6;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    text-align: start;
+  }
+
+  .main-text-container {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 512px) {
+  h1 {
+    color: #ffffff;
+    font-size: 32px;
+  }
+
+  .main-text-container {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 392px) {
+  .main-text-container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

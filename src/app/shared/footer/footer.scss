@@ -10,7 +10,7 @@
 .max-width {
   max-width: 1920px;
   margin: 0 auto;
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 }
 
 .logo-text {
@@ -115,7 +115,7 @@ p {
   }
 }
 
-@media (max-width: 672px) {
+@media (max-width: 800px) {
   .footer-container {
     padding-right: 32px;
     padding-left: 32px;

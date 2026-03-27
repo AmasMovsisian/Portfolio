@@ -1,14 +1,14 @@
+.max-width {
+  margin: 0 auto;
+  margin-bottom: 128px;
+}
+
 .references-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 128px;
   overflow: hidden;
-}
-
-.max-width {
-  margin: 0 auto;
-  margin-bottom: 128px;
 }
 
 .all-comments {
@@ -95,10 +95,7 @@ p {
 }
 
 h2 {
-  font-family: FiraCode;
-  font-weight: 700;
   font-size: 32px;
-  line-height: 100%;
   color: #3dcfb6;
   margin-bottom: 64px;
 }
