@@ -8,24 +8,27 @@ import { DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
   styleUrl: './portfolio-dialog.scss',
 })
 export class PortfolioDialog {
-  
   projectNumber: string;
   title: string;
   message: string;
   icons: string[];
   mainImagePath: string;
+  githubLink: string;
+  liveLink: string;
 
   @Output() nextProject = new EventEmitter<void>();
 
   constructor(
     @Inject(DIALOG_DATA) public data: any,
-    private dialogRef: DialogRef
+    private dialogRef: DialogRef,
   ) {
     this.projectNumber = data.projectNumber;
     this.title = data.title;
     this.message = data.message;
     this.icons = data.icons;
     this.mainImagePath = data.mainImagePath;
+    this.githubLink = data.githubLink || '';
+    this.liveLink = data.liveLink || '';
   }
 
   closeDialog() {

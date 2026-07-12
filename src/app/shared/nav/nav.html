@@ -1,30 +1,60 @@
- <nav>
-            <img src="assets/amas-movsisian-logo.png" class="nav-logo mobile" alt="Logo">
-            <div class="nav-left">
-                <div class="language-switcher">
-                    <button class="language-option">EN</button>
-                    <button class="language-option">DE</button>
-                </div>
+<nav>
+  <img src="assets/amas-movsisian-logo.png" class="nav-logo mobile" alt="Logo" />
 
-                <div class="nav-links">
-                    <div class="point_hover nav-left">
-                        <a href="">About me</a>
-                        <img src="assets/Hero_Section/point.png" alt="point" class="point">
-                    </div>
+  <div class="nav-left">
+    <div class="language-switcher">
+      <button class="language-option">EN</button>
+      <button class="language-option">DE</button>
+    </div>
 
-                    <div class="point_hover">
-                        <a href="">Skills</a>
-                        <img src="assets/Hero_Section/point.png" alt="point" class="point">
-                    </div>
+    <div class="nav-links">
+      <div class="point_hover">
+        <a href="#about">About me</a>
+        <img src="assets/Hero_Section/point.png" class="point" />
+      </div>
 
-                    <div class="point_hover">
-                        <a href="">Projects</a>
-                        <img src="assets/Hero_Section/point.png" alt="point" class="point">
-                    </div>
-                </div>
-            </div>
+      <div class="point_hover">
+        <a href="#skills">Skills</a>
+        <img src="assets/Hero_Section/point.png" class="point" />
+      </div>
 
-            <img src="assets/amas-movsisian-logo.png" class="nav-logo" alt="Logo">
-            <img class="hamburger-menu" src="/assets/Hero_Section/Hamburger-menu.png" alt="Hamburger-Menu">
-            
-        </nav>
+      <div class="point_hover">
+        <a href="#projects">Projects</a>
+        <img src="assets/Hero_Section/point.png" class="point" />
+      </div>
+    </div>
+  </div>
+
+  <img src="assets/amas-movsisian-logo.png" class="nav-logo" alt="Logo" />
+
+  <img
+    class="hamburger-menu"
+    src="assets/Hero_Section/Hamburger-menu.png"
+    alt="Hamburger Menu"
+    (click)="toggleMenu()"
+  />
+</nav>
+
+<div class="mobile-menu" [class.open]="menuOpen">
+  <div class="mobile-point-hover">
+    <a href="#about" (click)="closeMenu()">About me</a>
+    <img src="assets/Hero_Section/point.png" alt="point" class="mobile-point" />
+  </div>
+
+  <div class="mobile-point-hover">
+    <a href="#skills" (click)="closeMenu()">Skills</a>
+    <img src="assets/Hero_Section/point.png" alt="point" class="mobile-point" />
+  </div>
+
+  <div class="mobile-point-hover">
+    <a href="#projects" (click)="closeMenu()">Projects</a>
+    <img src="assets/Hero_Section/point.png" alt="point" class="mobile-point" />
+  </div>
+
+  <div class="mobile-language">
+    <div class="language-switcher">
+      <button class="language-option">EN</button>
+      <button class="language-option">DE</button>
+    </div>
+  </div>
+</div>

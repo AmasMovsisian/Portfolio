@@ -1,6 +1,11 @@
 <section class="dialog-container">
   <div class="top-row">
-    <img class="close" src="/assets/Portfolio-Dialog/close.png" alt="close" (click)="closeDialog()">
+    <img
+      class="close"
+      src="/assets/Portfolio-Dialog/close.png"
+      alt="close"
+      (click)="closeDialog()"
+    />
   </div>
 
   <div class="middle-row">
@@ -17,36 +22,36 @@
 
       <div class="icons">
         @for (icon of icons; track icon) {
-          <img class="icon" [src]="icon" alt="icon">
+          <img class="icon" [src]="icon" alt="icon" />
         }
       </div>
 
       <div class="dialog-btns">
-        <button class="dialog-button">
+        <a class="dialog-button" [href]="githubLink" target="_blank" rel="noopener noreferrer">
           <div class="btn-text-arrow">
             <span class="btn-text">GitHub</span>
-            <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow">
+            <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow" />
           </div>
-        </button>
+        </a>
 
-        <button class="dialog-button">
+        <a class="dialog-button" [href]="liveLink" target="_blank" rel="noopener noreferrer">
           <div class="btn-text-arrow">
             <span class="btn-text">Live Test</span>
-            <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow">
+            <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow" />
           </div>
-        </button>
+        </a>
       </div>
     </div>
 
     <div class="image-section">
-      <img class="main-img" [src]="mainImagePath" alt="project image">
+      <img class="main-img" [src]="mainImagePath" alt="project image" />
     </div>
   </div>
 
   <div class="bottom-row">
     <div class="next-project" (click)="goToNextProject()">
       <span class="next-project-txt">Next project</span>
-      <img class="next-arrow" src="/assets/Portfolio-Dialog/arrow.png" alt="arrow">
+      <img class="next-arrow" src="/assets/Portfolio-Dialog/arrow.png" alt="arrow" />
     </div>
   </div>
 </section>

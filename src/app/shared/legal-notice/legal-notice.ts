@@ -4,10 +4,9 @@ import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-legal-notice',
-  imports: [Nav, Footer,],
+  standalone: true,
+  imports: [Nav, Footer],
   templateUrl: './legal-notice.html',
   styleUrl: './legal-notice.scss',
 })
-export class LegalNotice {
-
-}
+export class LegalNotice {}

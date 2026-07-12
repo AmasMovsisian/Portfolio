@@ -19,7 +19,6 @@
   padding-inline: 96px;
 }
 
-
 .technologies-container {
   width: 100%;
   max-width: 520px;
@@ -58,7 +57,7 @@
 .icon-growth {
   width: 64px;
   height: 64px;
-  transition: all 125ms ease-in-out;
+  transition: transform 125ms ease-in-out;
 }
 
 .growth-interest {
@@ -276,6 +275,46 @@ p {
   .icons-container {
     padding-top: 64px;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1501px) {
+  .icons:hover {
+    transform: scale(1.07);
+  }
+}
+
+@media (max-width: 1500px) {
+  .icons {
+    animation: iconHeartbeat 2s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 1500px) {
+  .icon-growth {
+    animation: iconHeartbeat 2s ease-in-out infinite;
+  }
+}
+
+@keyframes iconHeartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.08);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 

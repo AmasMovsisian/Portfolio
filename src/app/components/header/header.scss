@@ -239,8 +239,6 @@ h3 {
   }
 }
 
-/* --- Responsive Media Queries --- */
-
 @media (max-width: 1400px) {
   .hero-meta {
     margin-left: 48px;
@@ -293,7 +291,6 @@ h3 {
   .hero-meta {
     margin-left: 12px;
     margin-right: 12px;
-    align-items: flex-start;
   }
 
   .hero-actions {
@@ -316,7 +313,7 @@ h3 {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 48px;
     text-align: center;
   }
 

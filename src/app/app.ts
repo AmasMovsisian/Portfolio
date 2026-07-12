@@ -1,5 +1,5 @@
 import { Component, signal, inject } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router } from '@angular/router';
 import { Dialog } from '@angular/cdk/dialog';
 import { Header } from './components/header/header';
 import { AboutMe } from './components/about-me/about-me';
@@ -9,27 +9,29 @@ import { PortfolioDialog } from './components/portfolio-dialog/portfolio-dialog'
 import { References } from './components/references/references';
 import { ContactMe } from './components/contact-me/contact-me';
 import { Footer } from './shared/footer/footer';
-import { LegalNotice } from './shared/legal-notice/legal-notice';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, 
-    Header, 
-    AboutMe, 
-    Skills, 
-    Portfolio, 
+    RouterOutlet,
+    Header,
+    AboutMe,
+    Skills,
+    Portfolio,
     PortfolioDialog,
     References,
     ContactMe,
     Footer,
-    LegalNotice,
+
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
+  router = inject(Router);
+
   protected readonly title = signal('Portfolio');
 
 
@@ -47,10 +49,10 @@ export class App {
     "/assets/Portfolio-Dialog/ElPolloLoco/JavaScript.png",
   ];
 
-  iconsPathDaBubble: string[] = [
-    "/assets/Portfolio-Dialog/DaBubble/HTML.png",
-    "/assets/Portfolio-Dialog/DaBubble/CSS.png",
-    "/assets/Portfolio-Dialog/DaBubble/JavaScript.png",
+  iconsPathCoderr: string[] = [
+    "/assets/Portfolio-Dialog/Coderr/HTML.png",
+    "/assets/Portfolio-Dialog/Coderr/CSS.png",
+    "/assets/Portfolio-Dialog/Coderr/JavaScript.png",
   ];
 
 
@@ -60,23 +62,35 @@ export class App {
       title: "Join",
       message: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       mainImagePath: "/assets/Portfolio-Dialog/Join/Join-img.png",
-      icons: this.iconsPathJoin
+      icons: this.iconsPathJoin,
+
+      githubLink: "DEIN_JOIN_GITHUB_LINK",
+      liveLink: "DEIN_JOIN_LIVE_TEST_LINK"
     },
+
     {
       projectNumber: "02",
       title: "El Pollo Loco",
       message: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
       mainImagePath: "/assets/Portfolio-Dialog/ElPolloLoco/ElPolloLoco-img.png",
-      icons: this.iconsPathElPolloLoco
+      icons: this.iconsPathElPolloLoco,
+
+      githubLink: "https://github.com/AmasMovsisian/ElPolloLoco",
+      liveLink: "https://amas-movsisyan.developerakademie.net/Modul%2012/ElPolloLoco/index.html"
     },
+
     {
       projectNumber: "03",
-      title: "DABubble",
-      message: "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-      mainImagePath: "/assets/Portfolio-Dialog/DaBubble/DaBubble.png",
-      icons: this.iconsPathDaBubble
+      title: "Coderr",
+      message: "Coderr is a freelance marketplace backend built with Django and Django REST Framework. It connects clients with developers through project requests and service offers, providing a powerful REST API with authentication, authorization, and data management.",
+      mainImagePath: "/assets/Portfolio-Dialog/Coderr/Coderr.jpg",
+      icons: this.iconsPathCoderr,
+
+      githubLink: "https://github.com/AmasMovsisian/Coderr_backend",
+      liveLink: "https://coderr.amasmovsisian.com/"
     }
   ];
+
 
   private dialog = inject(Dialog);
   private dialogRef: any;
@@ -91,17 +105,18 @@ export class App {
     return this.projects[1];
   }
 
-  get daBubbleProjectData() {
+  get CoderrProjectData() {
     return this.projects[2];
   }
 
+
   openPortfolioDialog(projectIndex: number) {
     this.currentProjectIndex = projectIndex;
-    
+
     if (this.dialogRef) {
       this.dialogRef.close();
     }
-    
+
     this.dialogRef = this.dialog.open(PortfolioDialog, {
       data: this.projects[this.currentProjectIndex],
       panelClass: 'portfolio-dialog-container'
@@ -113,9 +128,9 @@ export class App {
     });
   }
 
+
   goToNextProject() {
     this.currentProjectIndex = (this.currentProjectIndex + 1) % this.projects.length;
-    
 
     this.dialogRef.close();
     this.openPortfolioDialog(this.currentProjectIndex);
@@ -130,7 +145,7 @@ export class App {
     this.openPortfolioDialog(1);
   }
 
-  openDaBubbleDialog() {
+  openCoderrDialog() {
     this.openPortfolioDialog(2);
   }
 }

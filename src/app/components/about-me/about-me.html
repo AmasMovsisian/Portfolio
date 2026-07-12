@@ -1,40 +1,50 @@
 <section class="about-me">
-    <div class="about-me-container max-width">
+  <div class="about-me-container max-width">
+    <div
+      #aboutImage
+      class="about-me-image"
+      (mouseenter)="activateEffect()"
+      (touchstart)="activateEffect()"
+    ></div>
 
-        <div class="about-me-image">
+    <div class="about-me-box-container">
+      <span class="who-i-am">Who I Am</span>
+
+      <div class="about-me-box">
+        <h1>About me</h1>
+        <p>
+          I am a Full-Stack Developer passionate about creating modern and user focused digital
+          solutions. With a background in Technical Design, I combine creativity, design thinking
+          and technical skills to build engaging experiences.
+          <br /><br />
+          Through programming and personal 3D projects, I continuously expand my knowledge and enjoy
+          exploring new technologies. My name is Amas Movsisyan, I am based in Germany and open to
+          new challenges, collaborations and exciting opportunities.
+        </p>
+
+        <div class="about-me-text-hover">
+          <div class="about-me-text-icons">
+            <img class="about-me-icons" src="assets/About-Me/location_on.png" alt="" />
+            <p class="about-me-text">
+              Based in Germany and open to remote work and new opportunities.
+            </p>
+          </div>
+
+          <div class="about-me-text-icons">
+            <img class="about-me-icons" src="assets/About-Me/cognition.png" alt="" />
+            <p class="about-me-text">
+              Passionate about learning new technologies and improving my skills.
+            </p>
+          </div>
+
+          <div class="about-me-text-icons">
+            <img class="about-me-icons" src="assets/About-Me/new_releases.png" alt="" />
+            <p class="about-me-text">
+              Creative problem-solving with a focus on efficient solutions.
+            </p>
+          </div>
         </div>
-
-        <div class="about-me-box-container">
-            <span class="who-i-am">Who I Am</span>
-            <div class="about-me-box">
-                <h1>About me</h1>
-                <p>Hey there, I'm Lukas! Write some information about yourself that is IT related. Why are you passionate
-                    about coding? What is your source of inspiration for improving your programming skills?</p>
-
-                <div class="about-me-text-hover">
-
-                    <div class="about-me-text-icons">
-                        <img class="about-me-icons" src="assets/About-Me/location_on.png" alt="">
-                        <p class="about-me-text">Where are you based? Would you be open to working remotely or potentially relocating?</p>
-                    </div>
-
-                    <div class="about-me-text-icons">
-                        <img class="about-me-icons" src="assets/About-Me/cognition.png" alt="">
-                        <p class="about-me-text">Show that you are open-minded. Are you enthusiastic about learning new technologies and
-                            continually improving your skills?</p>
-                    </div>
-
-                    <div class="about-me-text-icons">
-                        <img class="about-me-icons" src="assets/About-Me/new_releases.png" alt="">
-                        <p class="about-me-text">A brief description of your problem-solving approach.
-                            Do you learn from each challenge as you search for the most efficient or elegant solution? You
-                            can include some keywords like: analytical thinking, creativity, persistence and collaboration.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+      </div>
     </div>
+  </div>
 </section>

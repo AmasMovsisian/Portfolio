@@ -1,15 +1,22 @@
-<app-header></app-header>
-<app-about-me></app-about-me>
-<app-skills></app-skills>
-<app-portfolio
-  (openJoinDialog)="openJoinDialog()"
-  (openElPolloLocoDialog)="openElPolloLocoDialog()"
-  (openDaBubbleDialog)="openDaBubbleDialog()">
-</app-portfolio>
-<app-references></app-references>
-<app-contact-me></app-contact-me>
-<app-footer></app-footer>
+@if (router.url !== '/legal-notice') {
+  <app-header></app-header>
 
-<app-legal-notice></app-legal-notice>
+  <app-about-me id="about"></app-about-me>
 
-<router-outlet />
+  <app-skills id="skills"></app-skills>
+
+  <app-portfolio
+    id="projects"
+    (openJoinDialog)="openJoinDialog()"
+    (openElPolloLocoDialog)="openElPolloLocoDialog()"
+    (openCoderrDialog)="openCoderrDialog()">
+  </app-portfolio>
+
+  <app-references></app-references>
+
+  <app-contact-me id="contact"></app-contact-me>
+
+  <app-footer></app-footer>
+} @else {
+  <router-outlet></router-outlet>
+}
