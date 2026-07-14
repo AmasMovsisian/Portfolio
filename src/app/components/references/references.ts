@@ -17,7 +17,7 @@ comments = [
   {
     id: 'comment-2',
     text: 'Amas demonstrated strong technical skills and reliability during the Join project. He implemented Angular features with confidence, worked effectively with Firebase, and actively contributed through clear and constructive communication. His structured approach and willingness to collaborate had a positive impact on the overall project success.',
-    author: 'Philipp Biebert - Team Partner'
+    author: 'Philipp - Team Partner'
   },
   {
     id: 'comment-3',

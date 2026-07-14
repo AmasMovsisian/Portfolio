@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   margin-bottom: 128px;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .skills-container {
@@ -17,21 +20,26 @@
   justify-content: space-between;
   align-items: center;
   padding-inline: 62px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .technologies-container {
   width: 100%;
   max-width: 520px;
+  box-sizing: border-box;
 }
 
 .icons-container {
-  width: 632px;
+  width: 100%;
+  max-width: 632px;
   min-height: 428px;
   gap: 48px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .icons-and-names {
@@ -246,14 +254,17 @@ p {
     transform: translateX(0);
     opacity: 1;
   }
+
   40% {
     transform: translateX(150%);
     opacity: 0;
   }
+
   41% {
     transform: translateX(-150%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -272,6 +283,7 @@ p {
     flex-direction: column;
     padding-inline: 32px;
   }
+
   .icons-container {
     padding-top: 64px;
     justify-content: center;
@@ -321,10 +333,11 @@ p {
 @media (max-width: 696px) {
   .skills-container {
     padding-left: 32px;
-    padding-right: 32px;
+    padding-right: 16px;
   }
+
   .icons-container {
-    width: 420px;
+    max-width: 420px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -334,10 +347,12 @@ p {
   h1 {
     font-size: 56px;
   }
+
   h2,
   .colored-text {
     font-size: 22px;
   }
+
   p {
     font-size: 16px;
   }
@@ -347,19 +362,24 @@ p {
   .skills-box {
     padding: 24px;
   }
+
   h1 {
     font-size: 48px;
   }
+
   h2,
   .colored-text {
     font-size: 20px;
   }
+
   p {
     font-size: 15px;
   }
+
   .skills-footer-text {
     font-size: 15px;
   }
+
   .skill-box-text-bottom {
     padding-top: 24px;
   }
@@ -367,24 +387,26 @@ p {
 
 @media (max-width: 446px) {
   .icons-container {
-    gap: 36px;
+    gap: 28px;
     padding-left: 16px;
     padding-right: 16px;
   }
+
   .skills-container {
     padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
 @media (max-width: 382px) {
   .icons-container {
-    width: 320px;
+    max-width: 320px;
   }
+
   .icons-and-names {
     width: 64px;
     height: 64px;
   }
+
   .icons {
     width: 60px;
     height: 60px;
@@ -395,22 +417,27 @@ p {
   .skills-box {
     padding: 20px;
   }
+
   .technologies {
     font-size: 20px;
     margin-bottom: 12px;
   }
+
   h1 {
     font-size: 42px;
     padding-bottom: 12px;
   }
+
   h2,
   .colored-text {
     font-size: 18px;
     padding-bottom: 12px;
   }
+
   p {
     font-size: 14px;
   }
+
   .skills-footer-text {
     font-size: 14px;
   }
@@ -420,29 +447,36 @@ p {
   .skills-box {
     padding: 16px;
   }
+
   h1 {
     font-size: 38px;
     padding-bottom: 8px;
   }
+
   h2,
   .colored-text {
     font-size: 16px;
     padding-bottom: 8px;
   }
+
   p {
     font-size: 13px;
     line-height: 1.3;
   }
+
   .skills-footer-text {
     font-size: 13px;
   }
+
   .skill-box-text-bottom {
     padding-top: 16px;
   }
+
   .hero-button {
     padding: 8px 20px;
     margin-top: 16px;
   }
+
   .btn-text {
     font-size: 16px;
   }
