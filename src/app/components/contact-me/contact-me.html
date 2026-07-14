@@ -1,22 +1,31 @@
 <section class="contact-me-container max-width">
   <div class="contact-me-text-container">
-    <h3>Contact me</h3>
+    <h3>
+      {{ 'CONTACT.TITLE' | translate }}
+    </h3>
 
     <h1>
-      Let's work <br />
-      together
+      {{ 'CONTACT.WORK' | translate }}
+
+      <br />
+
+      {{ 'CONTACT.TOGETHER' | translate }}
     </h1>
 
-    <h2>Got a problem to solve?</h2>
+    <h2>
+      {{ 'CONTACT.PROBLEM' | translate }}
+    </h2>
 
     <p>
-      Encourage people to contact you and describe what role you are interested in.<br />
-      Show that you will add value to their projects through your work.
+      {{ 'CONTACT.DESCRIPTION' | translate }}
     </p>
 
     <span class="need-dev">
-      Need a Frontend developer?
-      <span class="lets-talk">Let’s talk!</span>
+      {{ 'CONTACT.NEED' | translate }}
+
+      <span class="lets-talk">
+        {{ 'CONTACT.TALK' | translate }}
+      </span>
     </span>
   </div>
 
@@ -24,24 +33,40 @@
     <form class="form-container" [formGroup]="contactForm" (ngSubmit)="sendMail()">
       <div class="line"></div>
 
-      <label for="name"> What's your name? </label>
+      <label for="name">
+        {{ 'CONTACT.NAME_LABEL' | translate }}
+      </label>
 
-      <input type="text" id="name" placeholder="Your name goes here" formControlName="name" />
+      <input
+        type="text"
+        id="name"
+        [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate"
+        formControlName="name"
+      />
 
       <div class="line"></div>
 
-      <label for="email"> What's your email? </label>
+      <label for="email">
+        {{ 'CONTACT.EMAIL_LABEL' | translate }}
+      </label>
 
-      <input type="email" id="email" placeholder="youremail@email.com" formControlName="email" />
+      <input
+        type="email"
+        id="email"
+        [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate"
+        formControlName="email"
+      />
 
       <div class="line"></div>
 
-      <label for="message"> How can I help you? </label>
+      <label for="message">
+        {{ 'CONTACT.MESSAGE_LABEL' | translate }}
+      </label>
 
       <input
         type="text"
         id="message"
-        placeholder="What do you need to develop?"
+        [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate"
         formControlName="message"
       />
 
@@ -55,14 +80,20 @@
         </div>
 
         <span class="checkbox-text">
-          I've read the
-          <a href="" (click)="$event.stopPropagation()"> privacy policy </a>
-          and agree to the processing of my data as outlined.
+          {{ 'CONTACT.PRIVACY_START' | translate }}
+
+          <a href="" (click)="$event.stopPropagation()">
+            {{ 'CONTACT.PRIVACY_LINK' | translate }}
+          </a>
+
+          {{ 'CONTACT.PRIVACY_END' | translate }}
         </span>
       </div>
 
       <button class="contact-me-btn" type="submit" [disabled]="contactForm.invalid">
-        <span class="btn-text"> Say Hello ;) </span>
+        <span class="btn-text">
+          {{ 'CONTACT.BUTTON' | translate }}
+        </span>
       </button>
     </form>
   </div>

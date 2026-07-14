@@ -1,31 +1,39 @@
 <section class="skills">
   <div class="skills-container max-width">
     <div class="technologies-container">
-      <span class="technologies">Technologies</span>
+      <span class="technologies">
+        {{ 'SKILLS.TECHNOLOGIES' | translate }}
+      </span>
 
       <div class="skills-box">
         <div class="skill-box-text">
-          <h1>Skill Set</h1>
+          <h1>
+            {{ 'SKILLS.TITLE' | translate }}
+          </h1>
 
           <p>
-            I work with modern web technologies to create responsive and user-friendly applications.
-            My background in design helps me combine clean code with strong visual concepts and a
-            focus on user experience. I am constantly learning new technologies and improving my
-            skills to build efficient and creative solutions.
+            {{ 'SKILLS.DESCRIPTION' | translate }}
           </p>
 
           <div class="skill-box-text-bottom">
-            <h2>You need <span class="colored-text">another skill?</span></h2>
+            <h2>
+              {{ 'SKILLS.NEED' | translate }}
+
+              <span class="colored-text">
+                {{ 'SKILLS.ANOTHER' | translate }}
+              </span>
+            </h2>
 
             <span class="skills-footer-text">
-              Feel free to contact me. I am always open to learning new technologies and expanding
-              my knowledge.
+              {{ 'SKILLS.FOOTER' | translate }}
             </span>
           </div>
         </div>
 
         <a href="#contact" class="hero-button">
-          <span class="btn-text">Let's Talk</span>
+          <span class="btn-text">
+            {{ 'SKILLS.BUTTON' | translate }}
+          </span>
         </a>
       </div>
     </div>
@@ -34,20 +42,25 @@
       @for (icon of frontEndIcons; track icon.name) {
         <div class="icons-and-names">
           <img class="icons" [src]="icon.path" [alt]="icon.name" />
-          <p class="icons-names">{{ icon.name }}</p>
+
+          <p class="icons-names">
+            {{ icon.name }}
+          </p>
         </div>
       }
 
       <div class="icons-and-names growth-item">
         <img
-          class="growth-interest"
-          src="/assets/Skills/Growth Mindset/Growth Interest.png"
-          alt=""
-        />
+  class="growth-interest"
+  [src]="growthImage"
+  alt="Growth Mindset"
+/>
 
         <img class="icon-growth" src="/assets/Skills/Growth Mindset/Growth.png" alt="" />
 
-        <p class="icons-names">Growth Mindset</p>
+        <p class="icons-names">
+          {{ 'SKILLS.GROWTH' | translate }}
+        </p>
       </div>
     </div>
   </div>

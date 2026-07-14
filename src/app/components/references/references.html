@@ -1,5 +1,7 @@
 <section class="references-container max-width">
-  <h2>What my colleagues say about me</h2>
+  <h2>
+    {{ 'REFERENCES.TITLE' | translate }}
+  </h2>
 
   <div class="all-comments">
     <img class="quotes" src="/assets/References/quotes.png" alt="quotes" />
@@ -11,11 +13,16 @@
         [class]="getPositionClass(i)"
         (click)="goToSlide(i)"
       >
-        <p>{{ comment.text }}</p>
+        <p>
+          {{ comment.textKey | translate }}
+        </p>
 
         <div class="references-footer">
           <div class="line"></div>
-          <p>{{ comment.author }}</p>
+
+          <p>
+            {{ comment.author }}
+          </p>
         </div>
       </div>
     }

@@ -1,12 +1,25 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-skills',
-  imports: [],
+  standalone: true,
+  imports: [TranslatePipe],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })
 export class Skills {
+  constructor(private languageService: LanguageService) {}
+
+get growthImage() {
+
+  return this.languageService.current() === 'de'
+    ? '/assets/Skills/Growth Mindset/Growth-DE.png'
+    : '/assets/Skills/Growth Mindset/Growth-EN.png';
+
+}
+
   frontEndIcons = [
     {
       name: 'HTML',
@@ -60,7 +73,6 @@ export class Skills {
       name: 'Django',
       path: '/assets/Skills/Backend/Django.png',
     },
-
     {
       name: 'PostgreSQL',
       path: '/assets/Skills/Backend/PostgreSQL.png',
@@ -69,7 +81,6 @@ export class Skills {
       name: 'SQL',
       path: '/assets/Skills/Backend/SQL.png',
     },
-
     {
       name: 'Docker',
       path: '/assets/Skills/Backend/Docker.png',

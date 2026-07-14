@@ -4,206 +4,27 @@
   <div class="back-btn"></div>
 
   <section class="main-text-container">
-    <h1>Legal Notice</h1>
+    <h1>
+      {{ 'LEGAL.TITLE' | translate }}
+    </h1>
 
-    <div class="text">
-      <h3>Imprint (Legal Notice)</h3>
+    @for (section of sections; track section.title) {
+      <div class="text">
+        <h3>
+          {{ section.title | translate }}
+        </h3>
 
-      <p>
-        Amas Movsisyan<br />
-        Wilhelmstraße 79<br />
-        59439 Holzwickede<br />
-        Germany
-      </p>
+        @for (text of section.texts; track text) {
+          <p>
+            {{ text | translate }}
+          </p>
+        }
+      </div>
+    }
 
-      <h3>Contact</h3>
-
-      <p>
-        Email:
-        <a href="mailto:amas2017@icloud.com"> amas2017@icloud.com </a>
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>About this Website</h3>
-
-      <p>
-        This website is a personal portfolio developed and maintained by Amas Movsisyan. It was
-        created to showcase web development projects, technical skills, and professional experience.
-      </p>
-
-      <p>
-        The website was developed using Angular and serves as a presentation platform for personal
-        projects and programming work.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>Copyright</h3>
-
-      <p>
-        All original content on this website, including text, images, graphics, and design elements
-        created for this portfolio, is protected by copyright.
-      </p>
-
-      <p>
-        The content and implementation of this portfolio belong to Amas Movsisyan unless explicitly
-        stated otherwise. Any reproduction, modification, distribution, or commercial use requires
-        prior written permission.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>Disclaimer</h3>
-
-      <p>
-        The contents of this website have been created carefully and to the best of my knowledge.
-        However, I cannot guarantee that the information is always complete, accurate, or up to
-        date.
-      </p>
-
-      <p>
-        I assume no liability for any damages or disadvantages arising from the use of this website,
-        including technical issues, interruptions, data loss, or reliance on the information
-        provided.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>External Links</h3>
-
-      <p>
-        This website contains links to external services and websites, such as GitHub. These
-        external websites are operated by independent providers.
-      </p>
-
-      <p>
-        I have no influence on the content or privacy practices of external websites and assume no
-        responsibility for their content.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>Privacy Policy</h3>
-
-      <p>
-        The protection of personal data is important to me. Personal data is processed only in
-        accordance with applicable data protection laws, especially the General Data Protection
-        Regulation (GDPR).
-      </p>
-
-      <p>This website does not sell, rent, or transfer personal data to third parties.</p>
-    </div>
-
-    <div class="text">
-      <h3>Responsible Person</h3>
-
-      <p>The person responsible for data processing on this website is:</p>
-
-      <p>
-        Amas Movsisyan<br />
-        Wilhelmstraße 79<br />
-        59439 Holzwickede<br />
-        Germany
-      </p>
-
-      <p>
-        Email:
-        <a href="mailto:amas2017@icloud.com"> amas2017@icloud.com </a>
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>Hosting</h3>
-
-      <p>This website is hosted using GitHub Pages, a hosting service provided by GitHub, Inc.</p>
-
-      <p>
-        When accessing this website, GitHub may automatically process technical information such as
-        IP address, browser type, operating system, and access time. This data is processed to
-        provide secure and reliable hosting services.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>Contact Form and Email Communication</h3>
-
-      <p>The contact form on this website uses EmailJS to process messages sent by visitors.</p>
-
-      <p>
-        When you contact me through the form, the information you provide, including your name,
-        email address, and message content, is processed only for the purpose of responding to your
-        request.
-      </p>
-
-      <p>
-        The data is processed using EmailJS for message transmission purposes. Your information will
-        not be used for advertising purposes.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>Google Fonts</h3>
-
-      <p>
-        This website uses Google Fonts to provide a consistent and optimized typography experience.
-      </p>
-
-      <p>
-        The fonts are loaded from Google servers. During this process, technical information such as
-        your IP address may be transmitted to Google. Google processes this information according to
-        its own privacy policy.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>Server Log Files</h3>
-
-      <p>
-        The hosting provider may collect technical information automatically in server log files.
-        This may include browser type, operating system, referring page, date and time of access,
-        and IP address.
-      </p>
-
-      <p>
-        This information is used to ensure the security, stability, and proper operation of the
-        website.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>Your Rights</h3>
-
-      <p>
-        You have the right to request information about your stored personal data, correction,
-        deletion, or restriction of processing.
-      </p>
-
-      <p>
-        You also have the right to withdraw consent where applicable and to submit a complaint to
-        the responsible data protection authority.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>SSL Encryption</h3>
-
-      <p>
-        This website uses HTTPS encryption to protect communication between your browser and the
-        website.
-      </p>
-    </div>
-
-    <div class="text">
-      <h3>Changes to this Legal Notice</h3>
-
-      <p>
-        I reserve the right to update or modify this Legal Notice whenever necessary to reflect
-        technical, legal, or organizational changes.
-      </p>
-    </div>
-
-    <p class="date">Last updated: July 2026</p>
+    <p class="date">
+      {{ 'LEGAL.UPDATED' | translate }}
+    </p>
   </section>
 
   <app-footer></app-footer>

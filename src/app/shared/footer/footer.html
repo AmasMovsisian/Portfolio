@@ -1,8 +1,14 @@
 <section class="footer-container max-width">
   <div class="logo-text">
     <img class="footer-logo" src="/assets/amas-movsisian-logo.png" alt="Logo" />
-    <p>Web Developer</p>
-    <p>Germany</p>
+
+    <p>
+      {{ 'FOOTER.DEVELOPER' | translate }}
+    </p>
+
+    <p>
+      {{ 'FOOTER.COUNTRY' | translate }}
+    </p>
   </div>
 
   <div>
@@ -12,6 +18,7 @@
   <div class="links-to-networking">
     <div class="link-and-img">
       <div class="dot"></div>
+
       <a href="https://github.com/AmasMovsisian" target="_blank" rel="noopener noreferrer">
         GitHub
       </a>
@@ -19,17 +26,22 @@
 
     <div class="link-and-img">
       <div class="dot"></div>
+
       <a href=""> LinkedIn </a>
     </div>
 
     <div class="link-and-img">
       <div class="dot"></div>
+
       <a href="mailto:amas2017@icloud.com"> Email </a>
     </div>
 
     <div class="link-and-img">
       <div class="dot"></div>
-      <a routerLink="/legal-notice"> Legal Notice </a>
+
+      <a routerLink="/legal-notice">
+        {{ 'FOOTER.LEGAL' | translate }}
+      </a>
     </div>
   </div>
 </section>

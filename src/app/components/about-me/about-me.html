@@ -8,39 +8,45 @@
     ></div>
 
     <div class="about-me-box-container">
-      <span class="who-i-am">Who I Am</span>
+      <span class="who-i-am">
+        {{ 'ABOUT.WHO' | translate }}
+      </span>
 
       <div class="about-me-box">
-        <h1>About me</h1>
+        <h1>
+          {{ 'ABOUT.TITLE' | translate }}
+        </h1>
+
         <p>
-          I am a Full-Stack Developer passionate about creating modern and user focused digital
-          solutions. With a background in Technical Design, I combine creativity, design thinking
-          and technical skills to build engaging experiences.
+          {{ 'ABOUT.TEXT_1' | translate }}
+
           <br /><br />
-          Through programming and personal 3D projects, I continuously expand my knowledge and enjoy
-          exploring new technologies. My name is Amas Movsisyan, I am based in Germany and open to
-          new challenges, collaborations and exciting opportunities.
+
+          {{ 'ABOUT.TEXT_2' | translate }}
         </p>
 
         <div class="about-me-text-hover">
           <div class="about-me-text-icons">
             <img class="about-me-icons" src="assets/About-Me/location_on.png" alt="" />
+
             <p class="about-me-text">
-              Based in Germany and open to remote work and new opportunities.
+              {{ 'ABOUT.ITEM_1' | translate }}
             </p>
           </div>
 
           <div class="about-me-text-icons">
             <img class="about-me-icons" src="assets/About-Me/cognition.png" alt="" />
+
             <p class="about-me-text">
-              Passionate about learning new technologies and improving my skills.
+              {{ 'ABOUT.ITEM_2' | translate }}
             </p>
           </div>
 
           <div class="about-me-text-icons">
             <img class="about-me-icons" src="assets/About-Me/new_releases.png" alt="" />
+
             <p class="about-me-text">
-              Creative problem-solving with a focus on efficient solutions.
+              {{ 'ABOUT.ITEM_3' | translate }}
             </p>
           </div>
         </div>

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
+import { TranslatePipe } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact-me',
-  imports: [ReactiveFormsModule],
+  standalone: true,
+  imports: [ReactiveFormsModule, TranslatePipe],
   templateUrl: './contact-me.html',
   styleUrl: './contact-me.scss',
 })
@@ -36,6 +38,7 @@ export class ContactMe {
   sendMail() {
     if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
+
       return;
     }
 
@@ -52,6 +55,7 @@ export class ContactMe {
         },
         'NdDJD8FrlviVBKvf9',
       )
+
       .then(() => {
         alert('Message sent successfully!');
 
@@ -59,8 +63,10 @@ export class ContactMe {
 
         this.isChecked = false;
       })
+
       .catch((error) => {
         console.error('EmailJS Error:', error);
+
         alert(JSON.stringify(error));
       });
   }

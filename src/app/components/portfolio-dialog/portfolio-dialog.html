@@ -11,13 +11,23 @@
   <div class="middle-row">
     <div class="info-section">
       <div class="number-titel">
-        <span class="project-number">{{ projectNumber }}</span>
-        <h1>{{ title }}</h1>
+        <span class="project-number">
+          {{ projectNumber }}
+        </span>
+
+        <h1>
+          {{ title }}
+        </h1>
       </div>
 
       <div class="message-container">
-        <h2>What is this project about?</h2>
-        <p>{{ message }}</p>
+        <h2>
+          {{ 'DIALOG.ABOUT_PROJECT' | translate }}
+        </h2>
+
+        <p>
+          {{ messageKey | translate }}
+        </p>
       </div>
 
       <div class="icons">
@@ -29,14 +39,18 @@
       <div class="dialog-btns">
         <a class="dialog-button" [href]="githubLink" target="_blank" rel="noopener noreferrer">
           <div class="btn-text-arrow">
-            <span class="btn-text">GitHub</span>
+            <span class="btn-text"> GitHub </span>
+
             <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow" />
           </div>
         </a>
 
         <a class="dialog-button" [href]="liveLink" target="_blank" rel="noopener noreferrer">
           <div class="btn-text-arrow">
-            <span class="btn-text">Live Test</span>
+            <span class="btn-text">
+              {{ 'DIALOG.LIVE_TEST' | translate }}
+            </span>
+
             <img class="btn-arrow" src="/assets/Portfolio-Dialog/arrow_outward.png" alt="arrow" />
           </div>
         </a>
@@ -50,7 +64,10 @@
 
   <div class="bottom-row">
     <div class="next-project" (click)="goToNextProject()">
-      <span class="next-project-txt">Next project</span>
+      <span class="next-project-txt">
+        {{ 'DIALOG.NEXT_PROJECT' | translate }}
+      </span>
+
       <img class="next-arrow" src="/assets/Portfolio-Dialog/arrow.png" alt="arrow" />
     </div>
   </div>

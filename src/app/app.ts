@@ -10,7 +10,6 @@ import { References } from './components/references/references';
 import { ContactMe } from './components/contact-me/contact-me';
 import { Footer } from './shared/footer/footer';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -24,78 +23,73 @@ import { Footer } from './shared/footer/footer';
     References,
     ContactMe,
     Footer,
-
   ],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
   router = inject(Router);
 
   protected readonly title = signal('Portfolio');
 
-
   iconsPathJoin: string[] = [
-    "/assets/Portfolio-Dialog/Join/Angular.png",
-    "/assets/Portfolio-Dialog/Join/CSS.png",
-    "/assets/Portfolio-Dialog/Join/Firebase.png",
-    "/assets/Portfolio-Dialog/Join/HTML.png",
-    "/assets/Portfolio-Dialog/Join/TypeScript.png",
+    '/assets/Portfolio-Dialog/Join/Angular.png',
+    '/assets/Portfolio-Dialog/Join/CSS.png',
+    '/assets/Portfolio-Dialog/Join/Firebase.png',
+    '/assets/Portfolio-Dialog/Join/HTML.png',
+    '/assets/Portfolio-Dialog/Join/TypeScript.png',
   ];
 
   iconsPathElPolloLoco: string[] = [
-    "/assets/Portfolio-Dialog/ElPolloLoco/HTML.png",
-    "/assets/Portfolio-Dialog/ElPolloLoco/CSS.png",
-    "/assets/Portfolio-Dialog/ElPolloLoco/JavaScript.png",
+    '/assets/Portfolio-Dialog/ElPolloLoco/HTML.png',
+    '/assets/Portfolio-Dialog/ElPolloLoco/CSS.png',
+    '/assets/Portfolio-Dialog/ElPolloLoco/JavaScript.png',
   ];
 
   iconsPathCoderr: string[] = [
-    "/assets/Portfolio-Dialog/Coderr/Python.png",
-    "/assets/Portfolio-Dialog/Coderr/Django.png",
-    "/assets/Portfolio-Dialog/Coderr/Linux.png",
+    '/assets/Portfolio-Dialog/Coderr/Python.png',
+    '/assets/Portfolio-Dialog/Coderr/Django.png',
+    '/assets/Portfolio-Dialog/Coderr/Linux.png',
   ];
-
 
   projects = [
     {
-      projectNumber: "01",
-      title: "Join",
-      message: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      mainImagePath: "/assets/Portfolio-Dialog/Join/Join-img.png",
+      projectNumber: '01',
+      title: 'Join',
+      messageKey: 'PROJECTS.JOIN.DESCRIPTION',
+      mainImagePath: '/assets/Portfolio-Dialog/Join/Join-img.png',
       icons: this.iconsPathJoin,
 
-      githubLink: "DEIN_JOIN_GITHUB_LINK",
-      liveLink: "DEIN_JOIN_LIVE_TEST_LINK"
+      githubLink: 'DEIN_JOIN_GITHUB_LINK',
+      liveLink: 'DEIN_JOIN_LIVE_TEST_LINK',
     },
 
     {
-      projectNumber: "02",
-      title: "El Pollo Loco",
-      message: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-      mainImagePath: "/assets/Portfolio-Dialog/ElPolloLoco/ElPolloLoco-img.png",
+      projectNumber: '02',
+      title: 'El Pollo Loco',
+      messageKey: 'PROJECTS.POLLO.DESCRIPTION',
+      mainImagePath: '/assets/Portfolio-Dialog/ElPolloLoco/ElPolloLoco-img.png',
       icons: this.iconsPathElPolloLoco,
 
-      githubLink: "https://github.com/AmasMovsisian/ElPolloLoco",
-      liveLink: "https://amas-movsisyan.developerakademie.net/Modul%2012/ElPolloLoco/index.html"
+      githubLink: 'https://github.com/AmasMovsisian/ElPolloLoco',
+      liveLink: 'https://amas-movsisyan.developerakademie.net/Modul%2012/ElPolloLoco/index.html',
     },
 
     {
-      projectNumber: "03",
-      title: "Coderr",
-      message: "Coderr is a freelance marketplace backend built with Django and Django REST Framework. It connects clients with developers through project requests and service offers, providing a powerful REST API with authentication, authorization, and data management.",
-      mainImagePath: "/assets/Portfolio-Dialog/Coderr/Coderr.png",
+      projectNumber: '03',
+      title: 'Coderr',
+      messageKey: 'PROJECTS.CODERR.DESCRIPTION',
+      mainImagePath: '/assets/Portfolio-Dialog/Coderr/Coderr.png',
       icons: this.iconsPathCoderr,
 
-      githubLink: "https://github.com/AmasMovsisian/Coderr_backend",
-      liveLink: "https://coderr.amasmovsisian.com/"
-    }
+      githubLink: 'https://github.com/AmasMovsisian/Coderr_backend',
+      liveLink: 'https://coderr.amasmovsisian.com/',
+    },
   ];
-
 
   private dialog = inject(Dialog);
   private dialogRef: any;
   private currentProjectIndex: number = 0;
-
 
   get joinProjectData() {
     return this.projects[0];
@@ -109,7 +103,6 @@ export class App {
     return this.projects[2];
   }
 
-
   openPortfolioDialog(projectIndex: number) {
     this.currentProjectIndex = projectIndex;
 
@@ -119,15 +112,13 @@ export class App {
 
     this.dialogRef = this.dialog.open(PortfolioDialog, {
       data: this.projects[this.currentProjectIndex],
-      panelClass: 'portfolio-dialog-container'
+      panelClass: 'portfolio-dialog-container',
     });
-
 
     this.dialogRef.componentInstance.nextProject.subscribe(() => {
       this.goToNextProject();
     });
   }
-
 
   goToNextProject() {
     this.currentProjectIndex = (this.currentProjectIndex + 1) % this.projects.length;
@@ -135,7 +126,6 @@ export class App {
     this.dialogRef.close();
     this.openPortfolioDialog(this.currentProjectIndex);
   }
-
 
   openJoinDialog() {
     this.openPortfolioDialog(0);
