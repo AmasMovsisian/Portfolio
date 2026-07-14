@@ -179,6 +179,12 @@ p {
   transition: color 0.2s ease;
 }
 
+@media (max-width: 800px) {
+  .about-me {
+    margin-top: 32px;
+  }
+}
+
 @media (max-width: 700px) {
   .about-me-image {
     width: 512px;

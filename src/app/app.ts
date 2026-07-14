@@ -50,9 +50,9 @@ export class App {
   ];
 
   iconsPathCoderr: string[] = [
-    "/assets/Portfolio-Dialog/Coderr/HTML.png",
-    "/assets/Portfolio-Dialog/Coderr/CSS.png",
-    "/assets/Portfolio-Dialog/Coderr/JavaScript.png",
+    "/assets/Portfolio-Dialog/Coderr/Python.png",
+    "/assets/Portfolio-Dialog/Coderr/Django.png",
+    "/assets/Portfolio-Dialog/Coderr/Linux.png",
   ];
 
 
@@ -83,7 +83,7 @@ export class App {
       projectNumber: "03",
       title: "Coderr",
       message: "Coderr is a freelance marketplace backend built with Django and Django REST Framework. It connects clients with developers through project requests and service offers, providing a powerful REST API with authentication, authorization, and data management.",
-      mainImagePath: "/assets/Portfolio-Dialog/Coderr/Coderr.jpg",
+      mainImagePath: "/assets/Portfolio-Dialog/Coderr/Coderr.png",
       icons: this.iconsPathCoderr,
 
       githubLink: "https://github.com/AmasMovsisian/Coderr_backend",

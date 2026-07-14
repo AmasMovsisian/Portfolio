@@ -1,4 +1,4 @@
-import { Component, Inject, Output, EventEmitter } from '@angular/core';
+import { Component, Inject, Output, EventEmitter, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
 
 @Component({
@@ -7,7 +7,7 @@ import { DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
   templateUrl: './portfolio-dialog.html',
   styleUrl: './portfolio-dialog.scss',
 })
-export class PortfolioDialog {
+export class PortfolioDialog implements AfterViewInit {
   projectNumber: string;
   title: string;
   message: string;
@@ -17,6 +17,8 @@ export class PortfolioDialog {
   liveLink: string;
 
   @Output() nextProject = new EventEmitter<void>();
+
+  @ViewChild('dialogContent') dialogContent!: ElementRef;
 
   constructor(
     @Inject(DIALOG_DATA) public data: any,
@@ -29,6 +31,17 @@ export class PortfolioDialog {
     this.mainImagePath = data.mainImagePath;
     this.githubLink = data.githubLink || '';
     this.liveLink = data.liveLink || '';
+  }
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      const element = this.dialogContent.nativeElement;
+
+      element.scrollTo({
+        top: 0,
+        behavior: 'auto'
+      });
+    });
   }
 
   closeDialog() {

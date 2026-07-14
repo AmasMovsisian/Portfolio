@@ -218,6 +218,24 @@ h3 {
   }
 }
 
+@keyframes buttonTextMarquee {
+  0% {
+    transform: translateX(150%);
+  }
+
+  45% {
+    transform: translateX(0);
+  }
+
+  55% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
 @keyframes arrowFloat {
   0% {
     transform: translateY(0);
@@ -254,6 +272,7 @@ h3 {
   .hero-meta {
     margin-top: 0;
   }
+
   .slider-infinite {
     transform: translateY(300%) rotate(-3deg) translateX(-50%);
   }
@@ -283,7 +302,14 @@ h3 {
   }
 
   .btn-text {
+    display: inline-block;
+    white-space: nowrap;
     font-size: 18px;
+    animation: buttonTextMarquee 4s linear infinite;
+  }
+
+  .hero-button:hover .btn-text {
+    animation: buttonTextMarquee 4s linear infinite;
   }
 }
 
@@ -303,13 +329,12 @@ h3 {
   }
 
   .hero-button {
-    padding: 12px 12px;
+    padding: 6px 18px;
     margin: 16px 6px;
   }
 
   .btn-text {
     font-size: 16px;
-    text-align: center;
   }
 
   h1 {

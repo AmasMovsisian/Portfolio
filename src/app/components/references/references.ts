@@ -8,23 +8,23 @@ import { Component } from '@angular/core';
 export class References {
   currentIndex = 1;
   
-  comments = [
-    {
-      id: 'comment-1',
-      text: 'Amas ist ein ruhiges, konzentriertes und sehr gewissenhaftes Teammitglied. Seine außergewöhnliche Beobachtungsgabe ermöglicht es ihm, Fehler im Projekt aufzuspüren, die anderen entgehen würden. Besonders hervorzuheben ist seine Fähigkeit, Feedback auf eine höfliche und konstruktive Weise zu vermitteln, wodurch er maßgeblich zu einem harmonischen Arbeitsklima beigetragen hat. Seine ruhige Art und analytische Denkweise machen ihn zu einer wertvollen Unterstützung im Projektteam.',
-      author: 'Refiye Külhanbey - Team Partner'
-    },
-    {
-      id: 'comment-2',
-      text: 'Amas stood out in the Join project through his highly reliable and dedicated work ethic. He implemented the features of the Angular Kanban board carefully and with strong technical confidence. In working with Firebase, he demonstrated a solid understanding of data structures and asynchronous processes. He actively participated in team discussions and always communicated openly and constructively. Overall, he made an important and valuable contribution to the success of the project.',
-      author: 'Philipp Biebert - Team Partner'
-    },
-    {
-      id: 'comment-3',
-      text: 'Amas worked as a team member on the “Join” project and showed strong commitment and reliability. He actively contributed to the project’s success and consistently delivered his tasks with care. Even in challenging situations, he demonstrated a proactive and solution-oriented approach. His willingness to support others was particularly noteworthy. His collaborative mindset and positive attitude made a lasting contribution to the team.',
-      author: 'Akin - Join Project'
-    }
-  ];
+comments = [
+  {
+    id: 'comment-1',
+    text: 'Amas is a calm, focused, and reliable team member. His strong attention to detail helps him identify issues others might miss. He communicates feedback respectfully and contributes to a positive team environment. His analytical thinking and responsible approach make him a valuable support within the team.',
+    author: 'Refiye - Team Partner'
+  },
+  {
+    id: 'comment-2',
+    text: 'Amas demonstrated strong technical skills and reliability during the Join project. He implemented Angular features with confidence, worked effectively with Firebase, and actively contributed through clear and constructive communication. His structured approach and willingness to collaborate had a positive impact on the overall project success.',
+    author: 'Philipp Biebert - Team Partner'
+  },
+  {
+    id: 'comment-3',
+    text: 'Amas showed great commitment and a solution-oriented mindset throughout the Join project. He completed tasks carefully, supported the team, and made a valuable contribution to the project’s success. His positive attitude, reliability, and ability to handle challenges made him a strong team member.',
+    author: 'Akin - Join Project'
+  }
+];
 
   nextSlide() {
     this.currentIndex = (this.currentIndex + 1) % this.comments.length;
