@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 96px;
-  padding-left: 96px;
+  padding-right: 62px;
+  padding-left: 62px;
   box-sizing: border-box;
 }
 
@@ -245,7 +245,7 @@ a {
   }
 }
 
-@media (max-width: 1444px) {
+@media (max-width: 1340px) {
   .contact-me-container {
     flex-direction: column;
     padding-right: 48px;
