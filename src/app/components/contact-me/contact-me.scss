@@ -69,17 +69,8 @@
   margin-bottom: 32px;
 }
 
-label {
-  font-family: FiraCode, monospace;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 120%;
-  color: #3dcfb6;
-  padding-left: 32px;
-  margin-bottom: 20px;
-}
-
-input {
+input,
+textarea {
   width: 100%;
   background: transparent;
   outline: none;
@@ -97,6 +88,7 @@ input {
   -webkit-appearance: none;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
+  resize: none;
 
   &::placeholder {
     font-family: Karla, sans-serif;
@@ -127,6 +119,20 @@ input {
   }
 }
 
+textarea {
+  min-height: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  resize: none;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .checkbox-container {
   display: flex;
   align-items: center;
@@ -146,6 +152,7 @@ input {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+
   &:hover {
     background-color: rgba(61, 207, 183, 0.3);
   }
@@ -154,12 +161,9 @@ input {
 .checkmark-icon {
   width: 5px;
   height: 10px;
-
   border: solid #3dcfb6;
   border-width: 0 2px 2px 0;
-
   transform: rotate(45deg);
-
   display: block;
   margin-top: -2px;
 }
@@ -173,10 +177,7 @@ input {
 }
 
 a {
-  font-family: Karla, sans-serif;
-  font-weight: 400;
   font-size: 15px;
-  line-height: 120%;
   color: #3dcfb6;
 
   &:hover {
@@ -274,7 +275,8 @@ a {
   }
 
   label,
-  input {
+  input,
+  textarea {
     padding-left: 16px;
   }
 }
@@ -299,8 +301,11 @@ a {
   }
 
   input,
+  textarea,
   input::placeholder,
-  input:focus {
+  textarea::placeholder,
+  input:focus,
+  textarea:focus {
     font-size: 16px;
   }
 

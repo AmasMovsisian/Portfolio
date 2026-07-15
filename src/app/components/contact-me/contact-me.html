@@ -40,6 +40,7 @@
       <input
         type="text"
         id="name"
+        autocomplete="name"
         [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate"
         formControlName="name"
       />
@@ -53,6 +54,7 @@
       <input
         type="email"
         id="email"
+        autocomplete="email"
         [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate"
         formControlName="email"
       />
@@ -63,12 +65,15 @@
         {{ 'CONTACT.MESSAGE_LABEL' | translate }}
       </label>
 
-      <input
-        type="text"
+      <textarea
         id="message"
+        autocomplete="off"
+        rows="1"
+        maxlength="2500"
+        (input)="autoResize($event)"
         [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate"
         formControlName="message"
-      />
+      ></textarea>
 
       <div class="line"></div>
 

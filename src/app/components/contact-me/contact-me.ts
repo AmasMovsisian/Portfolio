@@ -35,6 +35,16 @@ export class ContactMe {
     });
   }
 
+  autoResize(event: Event) {
+    const textarea = event.target as HTMLTextAreaElement;
+
+    textarea.style.height = 'auto';
+
+    const maxHeight = 250;
+
+    textarea.style.height = `${Math.min(textarea.scrollHeight, maxHeight)}px`;
+  }
+
   sendMail() {
     if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
@@ -71,3 +81,4 @@ export class ContactMe {
       });
   }
 }
+

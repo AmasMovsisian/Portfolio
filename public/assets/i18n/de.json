@@ -13,7 +13,7 @@
     "SLIDER": {
       "REMOTE": "Remote verfügbar",
       "ROLE": "Full Stack Entwickler",
-      "LOCATION": "Standort Dortmund",
+      "LOCATION": "Standort Deutschland",
       "STATUS": "Offen für neue Projekte"
     }
   },
@@ -139,7 +139,7 @@
     "TITLE": "Impressum",
 
     "IMPRINT_TITLE": "Impressum",
-    "IMPRINT_TEXT": "Amas Movsisyan Wilhelmstraße 79 59439 Holzwickede Deutschland",
+    "IMPRINT_TEXT": "Amas Movsisyan\n Wilhelmstraße 79\n 59439 Holzwickede\nDeutschland",
 
     "CONTACT_TITLE": "Kontakt",
     "CONTACT_TEXT": "E-Mail: amas2017@icloud.com",

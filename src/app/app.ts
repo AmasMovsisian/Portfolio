@@ -19,7 +19,6 @@ import { Footer } from './shared/footer/footer';
     AboutMe,
     Skills,
     Portfolio,
-    PortfolioDialog,
     References,
     ContactMe,
     Footer,

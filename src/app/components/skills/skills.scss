@@ -9,37 +9,35 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left bottom;
-  margin-bottom: 128px;
+  padding-bottom: 64px;
   overflow-x: hidden;
-  width: 100%;
-  box-sizing: border-box;
+  margin-bottom: 128px;
 }
 
 .skills-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 62px;
-  width: 100%;
-  box-sizing: border-box;
+  padding-left: 62px;
+  padding-right: 62px;
 }
 
 .technologies-container {
-  width: 100%;
-  max-width: 520px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 520px;
+  flex-shrink: 0;
 }
 
 .icons-container {
-  width: 100%;
-  max-width: 632px;
-  min-height: 428px;
-  gap: 48px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  gap: 48px;
+  width: 632px;
+  flex-shrink: 0;
 }
 
 .icons-and-names {
@@ -47,19 +45,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
   width: 88px;
+  gap: 8px;
   text-align: center;
 }
 
 .icons {
   width: 64px;
   height: 64px;
-  transition: all 125ms ease-in-out;
+  transition: transform 125ms ease-in-out;
 }
 
 .icons:hover {
-  scale: 1.07;
+  transform: scale(1.07);
 }
 
 .icon-growth {
@@ -79,13 +77,6 @@
 }
 
 .growth-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.growth-item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -96,14 +87,11 @@
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-
     width: 188px;
     height: auto;
-
     opacity: 0;
     pointer-events: none;
     z-index: 10;
-
     transition: opacity 150ms ease-in-out;
   }
 
@@ -142,107 +130,81 @@
 }
 
 .skills-box {
+  width: 520px;
+  min-height: 446px;
+  box-sizing: border-box;
+  background: #3dcfb61a;
+  border: 1px solid #3dcfb6;
+  border-radius: 30px;
+  padding: 32px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  min-height: 446px;
-  height: auto;
-  width: 100%;
-  box-sizing: border-box;
-  background: #3dcfb61a;
-  border-radius: 30px;
-  border: solid;
-  border-color: #3dcfb6;
-  border-width: 1px;
-  padding: 32px;
 }
 
 .skill-box-text {
-  width: 100%;
-  max-width: 456px;
-  height: auto;
+  width: 456px;
 }
 
 .skill-box-text-bottom {
-  width: 100%;
-  max-width: 332px;
-  height: auto;
+  width: 332px;
   padding-top: 32px;
 }
 
 h1 {
-  letter-spacing: -0.03em;
-  font-family: FiraCode;
-  background: none;
-  color: #3dcfb6;
-  font-size: 64px;
-  font-weight: 700;
-  padding: 0;
   margin: 0;
   padding-bottom: 16px;
 }
 
 h2 {
-  font-family: FiraCode;
-  font-weight: 700;
-  font-size: 24px;
   margin: 0;
-  padding: 0;
   padding-bottom: 16px;
 }
 
 p {
-  font-family: Karla;
-  font-weight: 400;
-  font-style: normal;
   font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0;
   text-align: justify;
   margin: 0;
-  padding: 0;
 }
 
 .skills-footer-text {
-  font-family: Karla;
-  font-weight: 400;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 1);
   display: block;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
 }
 
 .colored-text {
   font-family: FiraCode;
-  font-weight: 700;
   font-size: 24px;
-  margin: 0;
-  padding: 0;
+  font-weight: 700;
   color: #3dcfb6;
 }
 
 .hero-button {
+  margin-top: 20px;
+  padding: 10px 24px;
   border: 1px solid #fff;
+  border-radius: 100px;
   background: none;
   color: #fff;
-  padding: 10px 24px;
-  border-radius: 100px;
-  margin-top: 20px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
 }
 
 .hero-button:hover {
-  color: #3dcfb6;
   border-color: #3dcfb6;
+  color: #3dcfb6;
 }
 
 .btn-text {
   display: inline-block;
   font-family: Karla;
   font-size: 18px;
-  line-height: 120%;
 }
 
 .hero-button:hover .btn-text {
@@ -271,79 +233,58 @@ p {
   }
 }
 
-@media (min-width: 1921px) {
-  .skills {
-    background: none;
-    background-color: #1c1c1c;
-  }
-}
-
-@media (max-width: 1340px) {
-  .skills-container {
-    flex-direction: column;
-    padding-inline: 32px;
-  }
-
-  .icons-container {
-    padding-top: 64px;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 1501px) {
-  .icons:hover {
-    transform: scale(1.07);
-  }
-}
-
-@media (max-width: 1500px) {
-  .icons {
-    animation: iconHeartbeat 2s ease-in-out infinite;
-  }
-}
-
-@media (max-width: 1500px) {
-  .icon-growth {
-    animation: iconHeartbeat 2s ease-in-out infinite;
-  }
-}
-
 @keyframes iconHeartbeat {
-  0% {
+  0%,
+  50%,
+  75%,
+  100% {
     transform: scale(1);
   }
 
   25% {
     transform: scale(1.08);
   }
+}
 
-  50% {
-    transform: scale(1);
-  }
-
-  75% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1);
+@media (max-width: 1500px) {
+  .icons,
+  .icon-growth {
+    animation: iconHeartbeat 2s ease-in-out infinite;
   }
 }
 
-@media (max-width: 696px) {
+@media (max-width: 1340px) {
   .skills-container {
+    flex-direction: column;
     padding-left: 32px;
-    padding-right: 16px;
+    padding-right: 32px;
+  }
+
+  .technologies-container {
+    width: 520px;
+  }
+
+  .skills-box {
+    width: 520px;
   }
 
   .icons-container {
-    max-width: 420px;
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 632px;
+    justify-content: center;
+    padding-top: 64px;
   }
 }
 
-@media (max-width: 532px) {
+@media (max-width: 700px) {
+  .technologies-container,
+  .skills-box {
+    width: 512px;
+  }
+
+  .icons-container {
+    width: 512px;
+  }
+
   h1 {
     font-size: 56px;
   }
@@ -358,126 +299,123 @@ p {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 624px) {
+  .technologies-container,
   .skills-box {
-    padding: 24px;
+    width: 468px;
+  }
+
+  .icons-container {
+    width: 468px;
   }
 
   h1 {
     font-size: 48px;
   }
+}
 
-  h2,
-  .colored-text {
-    font-size: 20px;
+@media (max-width: 532px) {
+  .technologies-container,
+  .skills-box {
+    width: 416px;
   }
 
-  p {
-    font-size: 15px;
+  .icons-container {
+    width: 416px;
+    gap: 24px;
   }
 
-  .skills-footer-text {
-    font-size: 15px;
-  }
-
+  .skill-box-text,
   .skill-box-text-bottom {
-    padding-top: 24px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 42px;
   }
 }
 
-@media (max-width: 446px) {
-  .icons-container {
-    gap: 28px;
-    padding-left: 16px;
-    padding-right: 16px;
+@media (max-width: 460px) {
+  .technologies-container,
+  .skills-box {
+    width: 346px;
   }
 
-  .skills-container {
-    padding-left: 16px;
+  .icons-container {
+    width: 346px;
+    gap: 20px;
+  }
+
+  .skills-box {
+    padding: 24px;
   }
 }
 
-@media (max-width: 382px) {
+@media (max-width: 380px) {
+  .technologies-container,
+  .skills-box {
+    width: 280px;
+  }
+
   .icons-container {
-    max-width: 320px;
+    width: 280px;
+    gap: 16px;
   }
 
   .icons-and-names {
-    width: 64px;
-    height: 64px;
+    width: 60px;
   }
 
   .icons {
     width: 60px;
     height: 60px;
   }
-}
 
-@media (max-width: 380px) {
+  .icons-names {
+    font-size: 12px;
+  }
+
   .skills-box {
     padding: 20px;
   }
 
-  .technologies {
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-
   h1 {
-    font-size: 42px;
-    padding-bottom: 12px;
+    font-size: 36px;
   }
 
   h2,
   .colored-text {
-    font-size: 18px;
-    padding-bottom: 12px;
+    font-size: 16px;
   }
 
-  p {
-    font-size: 14px;
-  }
-
+  p,
   .skills-footer-text {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 320px) {
+  .technologies-container,
+  .skills-box {
+    width: 260px;
+  }
+
+  .icons-container {
+    width: 260px;
+    gap: 12px;
+  }
+
   .skills-box {
     padding: 16px;
   }
 
   h1 {
-    font-size: 38px;
-    padding-bottom: 8px;
+    font-size: 32px;
   }
+}
 
-  h2,
-  .colored-text {
-    font-size: 16px;
-    padding-bottom: 8px;
-  }
-
-  p {
-    font-size: 13px;
-    line-height: 1.3;
-  }
-
-  .skills-footer-text {
-    font-size: 13px;
-  }
-
-  .skill-box-text-bottom {
-    padding-top: 16px;
-  }
-
-  .hero-button {
-    padding: 8px 20px;
-    margin-top: 16px;
-  }
-
-  .btn-text {
-    font-size: 16px;
+@media (min-width: 2440px) {
+  .skills {
+    background-image: none;
   }
 }
