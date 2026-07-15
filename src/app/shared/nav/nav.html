@@ -1,33 +1,42 @@
 <nav>
-  <img src="assets/amas-movsisian-logo.png" class="nav-logo mobile" alt="Logo" />
+
+  <img
+    src="assets/amas-movsisian-logo.png"
+    class="nav-logo mobile"
+    alt="Logo"
+    (click)="goToHome()"
+  />
 
   <div class="nav-left">
-<div class="language-switcher">
 
-  <button
-    class="language-option"
-    [class.active]="languageService.current() === 'en'"
-    (click)="changeLanguage('en')">
-    EN
-  </button>
+    <div class="language-switcher">
 
+      <button
+        class="language-option"
+        [class.active]="languageService.current() === 'en'"
+        (click)="changeLanguage('en')">
+        EN
+      </button>
 
-  <button
-    class="language-option"
-    [class.active]="languageService.current() === 'de'"
-    (click)="changeLanguage('de')">
-    DE
-  </button>
+      <button
+        class="language-option"
+        [class.active]="languageService.current() === 'de'"
+        (click)="changeLanguage('de')">
+        DE
+      </button>
 
-</div>
+    </div>
+
 
     <div class="nav-links">
+
       <div class="point_hover">
         <a href="#about">
           {{ 'HEADER.NAV.ABOUT' | translate }}
         </a>
         <img src="assets/Hero_Section/point.png" class="point" />
       </div>
+
 
       <div class="point_hover">
         <a href="#skills">
@@ -36,16 +45,27 @@
         <img src="assets/Hero_Section/point.png" class="point" />
       </div>
 
+
       <div class="point_hover">
         <a href="#projects">
           {{ 'HEADER.NAV.PROJECTS' | translate }}
         </a>
         <img src="assets/Hero_Section/point.png" class="point" />
       </div>
+
+
     </div>
+
   </div>
 
-  <img src="assets/amas-movsisian-logo.png" class="nav-logo" alt="Logo" />
+
+  <img
+    src="assets/amas-movsisian-logo.png"
+    class="nav-logo"
+    alt="Logo"
+    (click)="goToHome()"
+  />
+
 
   <img
     class="hamburger-menu"
@@ -53,15 +73,20 @@
     alt="Hamburger Menu"
     (click)="toggleMenu()"
   />
+
 </nav>
 
+
 <div class="mobile-menu" [class.open]="menuOpen">
+
+
   <div class="mobile-point-hover">
     <a href="#about" (click)="closeMenu()">
       {{ 'HEADER.NAV.ABOUT' | translate }}
     </a>
     <img src="assets/Hero_Section/point.png" alt="point" class="mobile-point" />
   </div>
+
 
   <div class="mobile-point-hover">
     <a href="#skills" (click)="closeMenu()">
@@ -70,6 +95,7 @@
     <img src="assets/Hero_Section/point.png" alt="point" class="mobile-point" />
   </div>
 
+
   <div class="mobile-point-hover">
     <a href="#projects" (click)="closeMenu()">
       {{ 'HEADER.NAV.PROJECTS' | translate }}
@@ -77,24 +103,29 @@
     <img src="assets/Hero_Section/point.png" alt="point" class="mobile-point" />
   </div>
 
+
   <div class="mobile-language">
+
     <div class="language-switcher">
 
-  <button
-    class="language-option"
-    [class.active]="languageService.current() === 'en'"
-    (click)="changeLanguage('en')">
-    EN
-  </button>
+      <button
+        class="language-option"
+        [class.active]="languageService.current() === 'en'"
+        (click)="changeLanguage('en')">
+        EN
+      </button>
 
 
-  <button
-    class="language-option"
-    [class.active]="languageService.current() === 'de'"
-    (click)="changeLanguage('de')">
-    DE
-  </button>
+      <button
+        class="language-option"
+        [class.active]="languageService.current() === 'de'"
+        (click)="changeLanguage('de')">
+        DE
+      </button>
 
-</div>
+    </div>
+
   </div>
+
+
 </div>

@@ -38,13 +38,13 @@
 
     "TITLE": "Skill Set",
 
-    "DESCRIPTION": "Ich arbeite mit modernen Webtechnologien, um responsive und benutzerfreundliche Anwendungen zu entwickeln. Mein Hintergrund im Design hilft mir, sauberen Code mit starken visuellen Konzepten und einem Fokus auf Benutzererfahrung zu verbinden. Ich lerne ständig neue Technologien und verbessere meine Fähigkeiten, um effiziente und kreative Lösungen zu entwickeln.",
+    "DESCRIPTION": "Ich arbeite mit modernen Webtechnologien, um responsive und benutzerfreundliche Anwendungen zu entwickeln. Mein Hintergrund im Design hilft mir, sauberen Code mit starken visuellen Konzepten und einem Fokus auf Benutzererfahrung zu verbinden. \nIch lerne ständig neue Technologien und verbessere meine Fähigkeiten, um effiziente und kreative Lösungen zu entwickeln.",
 
     "NEED": "Du brauchst",
 
     "ANOTHER": "eine weitere Fähigkeit?",
 
-    "FOOTER": "Kontaktiere mich gerne. Ich bin immer offen dafür, neue Technologien zu lernen und mein Wissen zu erweitern.",
+    "FOOTER": "Neue Technologien inspirieren mich\nich erweitere mit Neugier, Leidenschaft und Lernbereitschaft kontinuierlich mein Wissen und entwickle mich stetig weiter.",
 
     "BUTTON": "Lass uns reden",
 
@@ -54,7 +54,7 @@
   "PORTFOLIO": {
     "LABEL": "Portfolio",
     "TITLE": "Ausgewählte Projekte",
-    "DESCRIPTION": "Entdecke eine Auswahl meiner Projekte und interagiere mit ihnen, um meine Fähigkeiten in Aktion zu sehen."
+    "DESCRIPTION": "Du hast eine Idee oder ein Projekt, das du weiterentwickeln möchtest?\n Ich unterstütze dich dabei, innovative und zuverlässige digitale Lösungen zu schaffen.\nEntdecke eine Auswahl meiner Projekte und erfahre mehr über meine Arbeit als Full-Stack-Entwickler."
   },
 
   "DIALOG": {
@@ -77,15 +77,19 @@
     }
   },
 
+  
+  
   "REFERENCES": {
     "TITLE": "Was meine Kollegen über mich sagen",
 
     "COMMENT_1": "Amas ist ein ruhiges, fokussiertes und zuverlässiges Teammitglied. Seine starke Aufmerksamkeit für Details hilft ihm, Probleme zu erkennen, die andere möglicherweise übersehen. Er gibt respektvolles Feedback und trägt zu einer positiven Teamatmosphäre bei. Sein analytisches Denken und seine verantwortungsvolle Arbeitsweise machen ihn zu einer wertvollen Unterstützung im Team.",
 
-    "COMMENT_2": "Amas zeigte während des Join-Projekts starke technische Fähigkeiten und Zuverlässigkeit. Er setzte Angular-Funktionen sicher um, arbeitete effektiv mit Firebase und beteiligte sich aktiv durch klare und konstruktive Kommunikation. Seine strukturierte Arbeitsweise und seine Bereitschaft zur Zusammenarbeit hatten einen positiven Einfluss auf den Projekterfolg.",
+    "COMMENT_2": "Amas zeigte während des Join-Projekts starke technische Fähigkeiten und Zuverlässigkeit. Er setzte Angular-Funktionen sicher um, arbeitete effektiv mit Firebase und beteiligte sich aktiv durch klare Kommunikation. Seine strukturierte Arbeitsweise und seine Bereitschaft zur Zusammenarbeit hatten einen positiven Einfluss auf den Projekterfolg.",
 
-    "COMMENT_3": "Amas zeigte während des gesamten Join-Projekts großes Engagement und eine lösungsorientierte Denkweise. Er erledigte Aufgaben sorgfältig, unterstützte das Team und leistete einen wertvollen Beitrag zum Projekterfolg. Seine positive Einstellung, Zuverlässigkeit und Fähigkeit, Herausforderungen zu meistern, machten ihn zu einem starken Teammitglied."
-  },
+    "COMMENT_3": "Amas zeigte während des gesamten Join-Projekts großes Engagement und eine lösungsorientierte Denkweise. Er erledigte Aufgaben sorgfältig, unterstützte das Team und leistete einen wertvollen Beitrag zum Projekterfolg. Seine positive Einstellung und Zuverlässigkeit machten ihn zu einem starken Teammitglied."
+  }
+,
+
 
   "CONTACT": {
     "TITLE": "Kontaktiere mich",
@@ -96,9 +100,9 @@
 
     "PROBLEM": "Ein Problem zu lösen?",
 
-    "DESCRIPTION": "Erzähle mir, welche Unterstützung du suchst und welche Rolle für dich interessant ist. Gemeinsam können wir dein Projekt mit meiner Arbeit weiterentwickeln.",
+    "DESCRIPTION": "Du brauchst Unterstützung bei der Entwicklung deiner digitalen Lösung? \nLass uns gemeinsam deine Idee verwirklichen und ein Projekt schaffen, das überzeugt.",
 
-    "NEED": "Du brauchst einen Frontend Entwickler?",
+    "NEED": "Du brauchst einen Full-Stack Entwickler?",
 
     "TALK": "Lass uns reden!",
 

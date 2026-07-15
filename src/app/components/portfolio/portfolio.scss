@@ -2,6 +2,9 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+.multiline-text {
+  white-space: pre-line;
+}
 
 .max-width {
   max-width: 1920px;

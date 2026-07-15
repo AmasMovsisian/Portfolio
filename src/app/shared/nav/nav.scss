@@ -19,7 +19,14 @@ a {
 .nav-logo {
   width: 60px;
   height: 108px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
 
 .mobile {
   display: none;

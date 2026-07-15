@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -12,7 +13,10 @@ import { LanguageService } from '../../services/language.service';
 export class Nav {
   menuOpen = false;
 
-  constructor(public languageService: LanguageService) {}
+  constructor(
+    public languageService: LanguageService,
+    private router: Router
+  ) {}
 
   changeLanguage(language: 'de' | 'en') {
     this.languageService.change(language);
@@ -24,6 +28,24 @@ export class Nav {
 
   closeMenu() {
     this.menuOpen = false;
+  }
+
+  goToHome() {
+    this.closeMenu();
+
+    if (this.router.url !== '/') {
+      this.router.navigate(['/']).then(() => {
+        document.getElementById('home')?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    } else {
+      document.getElementById('home')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   }
 
   @HostListener('document:click', ['$event'])

@@ -11,7 +11,6 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class Portfolio {
   @Output() openJoinDialog = new EventEmitter<void>();
   @Output() openElPolloLocoDialog = new EventEmitter<void>();
-  @Output() openDaBubbleDialog = new EventEmitter<void>();
   @Output() openCoderrDialog = new EventEmitter<void>();
 
   onOpenJoinDialog() {
@@ -20,10 +19,6 @@ export class Portfolio {
 
   onOpenElPolloLocoDialog() {
     this.openElPolloLocoDialog.emit();
-  }
-
-  onOpenDaBubbleDialog() {
-    this.openDaBubbleDialog.emit();
   }
 
   onOpenCoderrDialog() {

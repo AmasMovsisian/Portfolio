@@ -42,7 +42,7 @@
 
     "ANOTHER": "another skill?",
 
-    "FOOTER": "Feel free to contact me. I am always open to learning new technologies and expanding my knowledge.",
+    "FOOTER": "New technologies inspire me. With curiosity, passion, and a commitment to learning, \nI continuously expand my knowledge and keep growing.",
 
     "BUTTON": "Let's Talk",
 
@@ -51,7 +51,7 @@
   "PORTFOLIO": {
     "LABEL": "Portfolio",
     "TITLE": "Featured Projects",
-    "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    "DESCRIPTION": "Do you have an idea or a project you want to take to the next level?\n I support you in creating innovative and reliable digital solutions.\nExplore a selection of my projects and discover more about my work as a Full-Stack Developer."
   },
 
   "DIALOG": {
@@ -93,9 +93,9 @@
 
     "PROBLEM": "Got a problem to solve?",
 
-    "DESCRIPTION": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+    "DESCRIPTION": "Do you need support in developing your digital solution?\nLet’s bring your idea to life and create a project that makes an impact together.",
 
-    "NEED": "Need a Frontend developer?",
+    "NEED": "Need a Full-Stack developer?",
 
     "TALK": "Let's talk!",
 

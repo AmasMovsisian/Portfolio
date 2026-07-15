@@ -1,4 +1,4 @@
-<div class="main-header max-width">
+<div class="main-header">
   <app-nav></app-nav>
 
   <section class="hero">
@@ -25,85 +25,35 @@
     </div>
   </section>
 
-  <div class="slider-infinite max-width">
+  <div class="slider-infinite">
     <div class="slider-track">
-      <div class="slide">
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
+      @for (item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]; track $index) {
+        <div class="slide">
+          <img class="slider-points" src="assets/Hero_Section/point.png" />
 
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.REMOTE' | translate }}
-        </span>
+          <span class="slider-infinite-text">
+            {{ 'HEADER.SLIDER.REMOTE' | translate }}
+          </span>
 
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
+          <img class="slider-points" src="assets/Hero_Section/point.png" />
 
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.ROLE' | translate }}
-        </span>
+          <span class="slider-infinite-text">
+            {{ 'HEADER.SLIDER.ROLE' | translate }}
+          </span>
 
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
+          <img class="slider-points" src="assets/Hero_Section/point.png" />
 
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.LOCATION' | translate }}
-        </span>
+          <span class="slider-infinite-text">
+            {{ 'HEADER.SLIDER.LOCATION' | translate }}
+          </span>
 
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
+          <img class="slider-points" src="assets/Hero_Section/point.png" />
 
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.STATUS' | translate }}
-        </span>
-      </div>
-
-      <div class="slide">
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.REMOTE' | translate }}
-        </span>
-
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.ROLE' | translate }}
-        </span>
-
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.LOCATION' | translate }}
-        </span>
-
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.STATUS' | translate }}
-        </span>
-      </div>
-
-      <div class="slide">
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.REMOTE' | translate }}
-        </span>
-
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.ROLE' | translate }}
-        </span>
-
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.LOCATION' | translate }}
-        </span>
-
-        <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-        <span class="slider-infinite-text">
-          {{ 'HEADER.SLIDER.STATUS' | translate }}
-        </span>
-      </div>
+          <span class="slider-infinite-text">
+            {{ 'HEADER.SLIDER.STATUS' | translate }}
+          </span>
+        </div>
+      }
     </div>
   </div>
 
