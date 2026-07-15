@@ -1,0 +1,193 @@
+{
+  "HEADER": {
+    "ROLE": "Full Stack Developer",
+    "CHECK_WORK": "Check my work",
+    "CONTACT": "Contact me",
+
+    "NAV": {
+      "ABOUT": "About me",
+      "SKILLS": "Skills",
+      "PROJECTS": "Projects"
+    },
+
+    "SLIDER": {
+      "REMOTE": "Available for remote work",
+      "ROLE": "Full Stack Developer",
+      "LOCATION": "Based in Germany",
+      "STATUS": "Open to work"
+    }
+  },
+
+  "ABOUT": {
+    "WHO": "Who I Am",
+    "TITLE": "About me",
+
+    "TEXT_1": "I am a Full-Stack Developer passionate about creating modern and user focused digital solutions. With a background in Technical Design, I combine creativity, design thinking and technical skills to build engaging experiences.",
+
+    "TEXT_2": "Through programming and personal 3D projects, I continuously expand my knowledge and enjoy exploring new technologies. My name is Amas Movsisyan, I am based in Germany and open to new challenges, collaborations and exciting opportunities.",
+
+    "ITEM_1": "Based in Germany and open to remote work and new opportunities.",
+
+    "ITEM_2": "Passionate about learning new technologies and improving my skills.",
+
+    "ITEM_3": "Creative problem-solving with a focus on efficient solutions."
+  },
+  "SKILLS": {
+    "TECHNOLOGIES": "Technologies",
+    "TITLE": "Skill Set",
+
+    "DESCRIPTION": "I work with modern web technologies to create responsive and user-friendly applications. My background in design helps me combine clean code with strong visual concepts and a focus on user experience. I am constantly learning new technologies and improving my skills to build efficient and creative solutions.",
+
+    "NEED": "You need",
+
+    "ANOTHER": "another skill?",
+
+    "FOOTER": "New technologies inspire me. With curiosity, passion, and a commitment to learning, \nI continuously expand my knowledge and keep growing.",
+
+    "BUTTON": "Let's Talk",
+
+    "GROWTH": "Growth Mindset"
+  },
+  "PORTFOLIO": {
+    "LABEL": "Portfolio",
+    "TITLE": "Featured Projects",
+    "DESCRIPTION": "Do you have an idea or a project you want to take to the next level?\n I support you in creating innovative and reliable digital solutions.\nExplore a selection of my projects and discover more about my work as a Full-Stack Developer."
+  },
+
+  "DIALOG": {
+    "ABOUT_PROJECT": "What is this project about?",
+    "LIVE_TEST": "Live Test",
+    "NEXT_PROJECT": "Next project"
+  },
+
+  "PROJECTS": {
+    "JOIN": {
+      "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+
+    "POLLO": {
+      "DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+    },
+
+    "CODERR": {
+      "DESCRIPTION": "Coderr is a freelance marketplace backend built with Django and Django REST Framework. It connects clients with developers through project requests and service offers, providing a powerful REST API with authentication, authorization, and data management."
+    }
+  },
+
+  "REFERENCES": {
+    "TITLE": "What my colleagues say about me",
+
+    "COMMENT_1": "Amas is a calm, focused, and reliable team member. His strong attention to detail helps him identify issues others might miss. He communicates feedback respectfully and contributes to a positive team environment. His analytical thinking and responsible approach make him a valuable support within the team.",
+
+    "COMMENT_2": "Amas demonstrated strong technical skills and reliability during the Join project. He implemented Angular features with confidence, worked effectively with Firebase, and actively contributed through clear and constructive communication. His structured approach and willingness to collaborate had a positive impact on the overall project success.",
+
+    "COMMENT_3": "Amas showed great commitment and a solution-oriented mindset throughout the Join project. He completed tasks carefully, supported the team, and made a valuable contribution to the project’s success. His positive attitude, reliability, and ability to handle challenges made him a strong team member."
+  },
+
+  "CONTACT": {
+    "TITLE": "Contact me",
+
+    "WORK": "Let's work",
+
+    "TOGETHER": "together",
+
+    "PROBLEM": "Got a problem to solve?",
+
+    "DESCRIPTION": "Do you need support in developing your digital solution?\nLet’s bring your idea to life and create a project that makes an impact together.",
+
+    "NEED": "Need a Full-Stack developer?",
+
+    "TALK": "Let's talk!",
+
+    "NAME_LABEL": "What's your name?",
+
+    "NAME_PLACEHOLDER": "Your name goes here",
+
+    "EMAIL_LABEL": "What's your email?",
+
+    "EMAIL_PLACEHOLDER": "youremail@email.com",
+
+    "MESSAGE_LABEL": "How can I help you?",
+
+    "MESSAGE_PLACEHOLDER": "What do you need to develop?",
+
+    "PRIVACY_START": "I've read the",
+
+    "PRIVACY_LINK": "privacy policy",
+
+    "PRIVACY_END": "and agree to the processing of my data as outlined.",
+
+    "BUTTON": "Say Hello ;)"
+  },
+
+  "FOOTER": {
+    "DEVELOPER": "Web Developer",
+
+    "COUNTRY": "Germany",
+
+    "LEGAL": "Legal Notice"
+  },
+
+  "LEGAL": {
+    "TITLE": "Legal Notice",
+
+    "IMPRINT_TITLE": "Imprint (Legal Notice)",
+    "IMPRINT_TEXT": "Amas Movsisyan\n Wilhelmstrasse 79\n 59439 Holzwickede\nGermany",
+
+    "CONTACT_TITLE": "Contact",
+    "CONTACT_TEXT": "Email: amas2017@icloud.com",
+
+    "ABOUT_TITLE": "About this Website",
+    "ABOUT_TEXT_1": "This website is a personal portfolio developed and maintained by Amas Movsisyan. It was created to showcase web development projects, technical skills, and professional experience.",
+    "ABOUT_TEXT_2": "The website was developed using Angular and serves as a presentation platform for personal projects and programming work.",
+
+    "COPYRIGHT_TITLE": "Copyright",
+    "COPYRIGHT_TEXT_1": "All original content on this website, including text, images, graphics, and design elements created for this portfolio, is protected by copyright.",
+    "COPYRIGHT_TEXT_2": "The content and implementation of this portfolio belong to Amas Movsisyan unless explicitly stated otherwise. Any reproduction, modification, distribution, or commercial use requires prior written permission.",
+
+    "DISCLAIMER_TITLE": "Disclaimer",
+    "DISCLAIMER_TEXT_1": "The contents of this website have been created carefully and to the best of my knowledge. However, I cannot guarantee that the information is always complete, accurate, or up to date.",
+    "DISCLAIMER_TEXT_2": "I assume no liability for any damages or disadvantages arising from the use of this website, including technical issues, interruptions, data loss, or reliance on the information provided.",
+
+    "LINKS_TITLE": "External Links",
+    "LINKS_TEXT_1": "This website contains links to external services and websites, such as GitHub. These external websites are operated by independent providers.",
+    "LINKS_TEXT_2": "I have no influence on the content or privacy practices of external websites and assume no responsibility for their content.",
+
+    "PRIVACY_TITLE": "Privacy Policy",
+    "PRIVACY_TEXT_1": "The protection of personal data is important to me. Personal data is processed only in accordance with applicable data protection laws, especially the General Data Protection Regulation (GDPR).",
+    "PRIVACY_TEXT_2": "This website does not sell, rent, or transfer personal data to third parties.",
+
+    "RESPONSIBLE_TITLE": "Responsible Person",
+    "RESPONSIBLE_TEXT_1": "The person responsible for data processing on this website is:",
+    "RESPONSIBLE_TEXT_2": "Amas Movsisyan Wilhelmstraße 79 59439 Holzwickede Germany Email: amas2017@icloud.com",
+
+    "HOSTING_TITLE": "Hosting",
+    "HOSTING_TEXT_1": "This website is hosted using GitHub Pages, a hosting service provided by GitHub, Inc.",
+    "HOSTING_TEXT_2": "When accessing this website, GitHub may automatically process technical information such as IP address, browser type, operating system, and access time.",
+
+    "FORM_TITLE": "Contact Form and Email Communication",
+    "FORM_TEXT_1": "The contact form on this website uses EmailJS to process messages sent by visitors.",
+    "FORM_TEXT_2": "When you contact me through the form, the information you provide, including your name, email address, and message content, is processed only for the purpose of responding to your request.",
+    "FORM_TEXT_3": "Your information will not be used for advertising purposes.",
+
+    "FONTS_TITLE": "Google Fonts",
+    "FONTS_TEXT_1": "This website uses Google Fonts to provide a consistent and optimized typography experience.",
+    "FONTS_TEXT_2": "The fonts are loaded from Google servers. During this process, technical information such as your IP address may be transmitted to Google.",
+
+    "SERVER_TITLE": "Server Log Files",
+    "SERVER_TEXT_1": "The hosting provider may collect technical information automatically in server log files.",
+    "SERVER_TEXT_2": "This information is used to ensure the security, stability, and proper operation of the website.",
+
+    "RIGHTS_TITLE": "Your Rights",
+    "RIGHTS_TEXT_1": "You have the right to request information about your stored personal data, correction, deletion, or restriction of processing.",
+    "RIGHTS_TEXT_2": "You also have the right to withdraw consent where applicable and to submit a complaint to the responsible data protection authority.",
+
+    "SSL_TITLE": "SSL Encryption",
+    "SSL_TEXT": "This website uses HTTPS encryption to protect communication between your browser and the website.",
+
+    "CHANGES_TITLE": "Changes to this Legal Notice",
+    "CHANGES_TEXT": "I reserve the right to update or modify this Legal Notice whenever necessary to reflect technical, legal, or organizational changes.",
+
+    "UPDATED": "Last updated: July 2026"
+  }
+}
