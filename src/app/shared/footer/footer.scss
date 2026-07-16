@@ -1,3 +1,9 @@
+.max-width-for-footer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -18,24 +24,18 @@
   width: 60px;
   height: 108px;
   margin-bottom: 16px;
-  cursor: pointer;
-  transition: transform 125ms ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 }
 
 p {
   font-family: FiraCode;
   color: rgba(255, 255, 255, 0.8);
   padding-bottom: 8px;
+  margin-bottom: 0;
 }
 
 .amas-movsisian {
   font-family: FiraCode;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
   line-height: 120%;
   letter-spacing: 0%;
@@ -92,27 +92,32 @@ p {
   margin-bottom: 32px;
 }
 
-@media (max-width: 772px) {
-  .amas-movsisian {
-    display: none;
-  }
-  .amas-movsisian-responsive {
-    display: block;
-    display: flex;
-    justify-content: center;
+@media (max-width: 800px) {
+  .footer-container {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 772px) {
   .footer-container {
-    padding-right: 32px;
-    padding-left: 32px;
+    align-items: flex-end;
+  }
+
+  .amas-movsisian {
+    display: none;
+  }
+
+  .amas-movsisian-responsive {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
 @media (max-width: 392px) {
   .footer-container {
-    padding-right: 16px;
     padding-left: 16px;
+    padding-right: 16px;
   }
 }
