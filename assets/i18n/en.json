@@ -87,37 +87,51 @@
   "CONTACT": {
     "TITLE": "Contact me",
 
-    "WORK": "Let's work",
+    "WORK": "Let's",
 
-    "TOGETHER": "together",
+    "TOGETHER": "work together",
 
-    "PROBLEM": "Got a problem to solve?",
+    "PROBLEM": "Have a problem to solve?",
 
-    "DESCRIPTION": "Do you need support in developing your digital solution?\nLet’s bring your idea to life and create a project that makes an impact together.",
+    "DESCRIPTION": "Do you need support developing your digital solution? \nLet's bring your idea to life together and create a project that makes an impact.",
 
-    "NEED": "Need a Full-Stack developer?",
+    "NEED": "Need a Full-Stack Developer?",
 
     "TALK": "Let's talk!",
 
-    "NAME_LABEL": "What's your name?",
+    "NAME_LABEL": "What is your name?",
 
-    "NAME_PLACEHOLDER": "Your name goes here",
+    "NAME_PLACEHOLDER": "Your name",
 
-    "EMAIL_LABEL": "What's your email?",
+    "EMAIL_LABEL": "What is your email?",
 
     "EMAIL_PLACEHOLDER": "youremail@email.com",
 
     "MESSAGE_LABEL": "How can I help you?",
 
-    "MESSAGE_PLACEHOLDER": "What do you need to develop?",
+    "MESSAGE_PLACEHOLDER": "What would you like to develop?",
 
-    "PRIVACY_START": "I've read the",
+    "PRIVACY_START": "I have read the",
 
     "PRIVACY_LINK": "privacy policy",
 
-    "PRIVACY_END": "and agree to the processing of my data as outlined.",
+    "PRIVACY_END": "and agree to the processing of my data.",
 
-    "BUTTON": "Say Hello ;)"
+    "BUTTON": "Say hello ;)",
+
+    "ERROR_NAME": "Oops! It seems your name is missing.",
+
+    "ERROR_EMAIL_REQUIRED": "Your email is required.",
+
+    "ERROR_EMAIL_INVALID": "Please enter a valid email address.",
+
+    "ERROR_MESSAGE": "What would you like to develop?",
+
+    "ERROR_PRIVACY": "Please accept the privacy policy.",
+
+    "SUCCESS_TITLE": "Message sent!",
+
+    "SUCCESS_MESSAGE": "Your message was sent successfully. I will try to answer as soon as possible."
   },
 
   "FOOTER": {
@@ -188,6 +202,24 @@
     "CHANGES_TITLE": "Changes to this Legal Notice",
     "CHANGES_TEXT": "I reserve the right to update or modify this Legal Notice whenever necessary to reflect technical, legal, or organizational changes.",
 
-    "UPDATED": "Last updated: July 2026"
+    "UPDATED": "Last updated: July 2026",
+
+    "PRIVACY_POLICY_TITLE": "Privacy Policy",
+
+    "PRIVACY_POLICY_TEXT_1": "Protecting your personal data is important to me. Personal data is processed only in accordance with applicable data protection laws.",
+
+    "PRIVACY_POLICY_TEXT_2": "When visiting this website, technical information such as IP address, browser type, operating system and access time may be processed automatically. This data is used exclusively for security and technical operation of the website.",
+
+    "PRIVACY_POLICY_TEXT_3": "This website is hosted using GitHub Pages. Technical access information may be processed by the hosting provider.",
+
+    "PRIVACY_POLICY_TEXT_4": "You can contact me via email. Any information you provide will only be used to process your request.",
+
+    "PRIVACY_POLICY_TEXT_5": "Personal data will not be shared with third parties unless required by law.",
+
+    "PRIVACY_POLICY_TEXT_6": "This website uses Google Fonts. Technical information such as your IP address may be transmitted to Google.",
+
+    "PRIVACY_POLICY_TEXT_7": "You have the right to request information about your stored personal data and request correction, deletion or restriction of processing.",
+
+    "PRIVACY_POLICY_TEXT_8": "If you have any questions regarding data protection, you can contact me at any time using the provided email address."
   }
 }

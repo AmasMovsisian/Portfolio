@@ -77,8 +77,6 @@
     }
   },
 
-  
-  
   "REFERENCES": {
     "TITLE": "Was meine Kollegen über mich sagen",
 
@@ -87,10 +85,7 @@
     "COMMENT_2": "Amas zeigte während des Join-Projekts starke technische Fähigkeiten und Zuverlässigkeit. Er setzte Angular-Funktionen sicher um, arbeitete effektiv mit Firebase und beteiligte sich aktiv durch klare Kommunikation. Seine strukturierte Arbeitsweise und seine Bereitschaft zur Zusammenarbeit hatten einen positiven Einfluss auf den Projekterfolg.",
 
     "COMMENT_3": "Amas zeigte während des gesamten Join-Projekts großes Engagement und eine lösungsorientierte Denkweise. Er erledigte Aufgaben sorgfältig, unterstützte das Team und leistete einen wertvollen Beitrag zum Projekterfolg. Seine positive Einstellung und Zuverlässigkeit machten ihn zu einem starken Teammitglied."
-  }
-,
-
-
+  },
   "CONTACT": {
     "TITLE": "Kontaktiere mich",
 
@@ -124,7 +119,21 @@
 
     "PRIVACY_END": "gelesen und stimme der Verarbeitung meiner Daten zu.",
 
-    "BUTTON": "Hallo sagen ;)"
+    "BUTTON": "Hallo sagen ;)",
+
+    "ERROR_NAME": "Hoppla! Dein Name fehlt.",
+
+    "ERROR_EMAIL_REQUIRED": "Deine E-Mail-Adresse ist erforderlich.",
+
+    "ERROR_EMAIL_INVALID": "Bitte gib eine gültige E-Mail-Adresse ein.",
+
+    "ERROR_MESSAGE": "Was möchtest du entwickeln?",
+
+    "ERROR_PRIVACY": "Bitte akzeptiere die Datenschutzerklärung.",
+
+    "SUCCESS_TITLE": "Nachricht gesendet!",
+
+    "SUCCESS_MESSAGE": "Deine Nachricht wurde erfolgreich gesendet. Ich werde so schnell wie möglich antworten."
   },
 
   "FOOTER": {
@@ -195,6 +204,24 @@
     "CHANGES_TITLE": "Änderungen dieses Impressums",
     "CHANGES_TEXT": "Ich behalte mir vor, dieses Impressum bei technischen, rechtlichen oder organisatorischen Änderungen anzupassen.",
 
-    "UPDATED": "Letzte Aktualisierung: Juli 2026"
+    "UPDATED": "Letzte Aktualisierung: Juli 2026",
+
+    "PRIVACY_POLICY_TITLE": "Datenschutzerklärung",
+
+    "PRIVACY_POLICY_TEXT_1": "Der Schutz Ihrer persönlichen Daten ist mir wichtig. Personenbezogene Daten werden ausschließlich im Rahmen der gesetzlichen Datenschutzbestimmungen verarbeitet.",
+
+    "PRIVACY_POLICY_TEXT_2": "Beim Besuch dieser Website können technische Daten wie IP-Adresse, Browsertyp, Betriebssystem und Zeitpunkt des Zugriffs automatisch verarbeitet werden. Diese Daten dienen ausschließlich der Sicherheit und technischen Bereitstellung der Website.",
+
+    "PRIVACY_POLICY_TEXT_3": "Diese Website verwendet GitHub Pages als Hosting-Anbieter. Dabei können technische Zugriffsdaten durch den Hosting-Anbieter verarbeitet werden.",
+
+    "PRIVACY_POLICY_TEXT_4": "Zur Kontaktaufnahme können Sie mich per E-Mail erreichen. Die von Ihnen übermittelten Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.",
+
+    "PRIVACY_POLICY_TEXT_5": "Es erfolgt keine Weitergabe personenbezogener Daten an Dritte, sofern keine gesetzliche Verpflichtung dazu besteht.",
+
+    "PRIVACY_POLICY_TEXT_6": "Diese Website verwendet Google Fonts. Dabei können technische Informationen wie die IP-Adresse an Google übermittelt werden.",
+
+    "PRIVACY_POLICY_TEXT_7": "Sie haben das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten sowie auf Berichtigung, Löschung oder Einschränkung der Verarbeitung.",
+
+    "PRIVACY_POLICY_TEXT_8": "Wenn Sie Fragen zum Datenschutz haben, können Sie sich jederzeit unter der angegebenen E-Mail-Adresse an mich wenden."
   }
 }
