@@ -19,18 +19,18 @@
             <h2>
               {{ 'SKILLS.NEED' | translate }}
 
-              <span class="colored-text ">
+              <span class="colored-text">
                 {{ 'SKILLS.ANOTHER' | translate }}
               </span>
             </h2>
 
-            <span class="skills-footer-text multiline-text ">
+            <span class="skills-footer-text multiline-text">
               {{ 'SKILLS.FOOTER' | translate }}
             </span>
           </div>
         </div>
 
-        <a href="#contact" class="hero-button">
+        <a routerLink="/" [fragment]="'contact'" class="hero-button">
           <span class="btn-text">
             {{ 'SKILLS.BUTTON' | translate }}
           </span>
@@ -50,11 +50,7 @@
       }
 
       <div class="icons-and-names growth-item">
-        <img
-  class="growth-interest"
-  [src]="growthImage"
-  alt="Growth Mindset"
-/>
+        <img class="growth-interest" [src]="growthImage" alt="Growth Mindset" />
 
         <img class="icon-growth" src="/assets/Skills/Growth Mindset/Growth.png" alt="" />
 

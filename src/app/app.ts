@@ -59,8 +59,8 @@ export class App {
       mainImagePath: '/assets/Portfolio-Dialog/Join/Join-img.png',
       icons: this.iconsPathJoin,
 
-      githubLink: 'DEIN_JOIN_GITHUB_LINK',
-      liveLink: 'DEIN_JOIN_LIVE_TEST_LINK',
+      githubLink: 'https://github.com/AmasMovsisian/Join.git',
+      liveLink: 'https://join.amasmovsisian.com/login',
     },
 
     {
@@ -71,7 +71,7 @@ export class App {
       icons: this.iconsPathElPolloLoco,
 
       githubLink: 'https://github.com/AmasMovsisian/ElPolloLoco',
-      liveLink: 'https://amas-movsisyan.developerakademie.net/Modul%2012/ElPolloLoco/index.html',
+      liveLink: 'https://elpolloloco.amasmovsisian.com/',
     },
 
     {

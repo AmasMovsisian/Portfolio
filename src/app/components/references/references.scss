@@ -1,13 +1,54 @@
-.max-width {
-  margin: 0 auto;
-  margin-bottom: 128px;
-}
-
 .references-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 128px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 35%;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(28, 28, 28, 1) 0%,
+      rgba(28, 28, 28, 0.02) 36%
+    );
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(28, 28, 28, 1) 0%,
+      rgba(28, 28, 28, 0.02) 36%
+    );
+  }
+
+  h2,
+  .slider-nav {
+    position: relative;
+    z-index: 11;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  color: #3dcfb6;
+  margin-bottom: 64px;
+  text-align: center;
+  font-family: Karla, sans-serif;
+  font-weight: 400;
 }
 
 .all-comments {
@@ -35,7 +76,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 548px;
-  height: 146px;
+  min-height: 146px;
   border-radius: 30px;
   background: #26524b;
   border: 1px solid #3dcfb6;
@@ -44,14 +85,38 @@
     transform 0.5s ease-in-out,
     opacity 0.5s ease-in-out;
   cursor: pointer;
+  z-index: 2;
 }
 
 .comment-box p {
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.6;
   margin: 0;
+  color: #ffffff;
+}
+
+.comment-box .references-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.comment-box .references-footer .line {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.comment-box .references-footer p {
+  font-family: Karla, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+  white-space: nowrap;
 }
 
 .center {
@@ -82,29 +147,14 @@
   z-index: 1;
 }
 
-.references-footer {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.line {
-  flex: 1;
-  height: 1px;
-  background-color: aliceblue;
-}
-
-h2 {
-  font-size: 32px;
-  color: #3dcfb6;
-  margin-bottom: 64px;
-}
-
 .slider-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 64px;
+  gap: 8px;
+  position: relative;
+  z-index: 11;
 }
 
 .arrow-left,
@@ -112,33 +162,43 @@ h2 {
   width: 40px;
   height: 40px;
   transition: all 125ms ease-in-out;
+  cursor: pointer;
 }
 
 .arrow-left:hover {
-  cursor: pointer;
   content: url('/assets/References/arrow_left_hovered.png');
   transform: translateX(-2px) scale(1.125);
 }
 
 .arrow-right:hover {
-  cursor: pointer;
   content: url('/assets/References/arrow_right_hovered.png');
   transform: translateX(2px) scale(1.125);
 }
 
-a {
-  align-self: center;
+.slider-nav a {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  padding: 0 8px;
+  padding: 0 4px;
   cursor: pointer;
 }
 
 .dots {
   width: 8px;
   height: 8px;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
+  .references-container {
+    margin-bottom: 64px;
+
+    &::before,
+    &::after {
+      width: 25%;
+    }
+  }
+
   h2 {
     font-size: 26px;
     text-align: center;
@@ -151,19 +211,20 @@ a {
 
   .comment-box {
     width: 280px;
-    min-height: 280px;
-    padding: 40px 24px 32px;
+    min-height: 220px;
+    padding: 32px 24px;
   }
 
   .comment-box p {
     font-size: 16px;
+    line-height: 1.5;
   }
 
   .quotes {
     width: 60px;
     height: auto;
-    top: 0;
-    left: calc(50% - 170px);
+    top: 8px;
+    left: calc(50% - 140px);
   }
 
   .left {
@@ -174,26 +235,21 @@ a {
     transform: translateX(calc(-40% + 280px + 16px)) scale(0.8);
   }
 
-  .references-footer {
-    margin-top: 32px;
-  }
-
   .slider-nav {
-    margin-top: 32px;
-  }
-}
-
-@media (max-width: 460px) {
-  .comment-box {
-    width: 260px;
-    padding: 24px;
+    margin-top: 40px;
+    gap: 4px;
   }
 }
 
 @media (max-width: 460px) {
   .comment-box {
     width: 240px;
-    padding: 32px 16px 64px;
+    min-height: 200px;
+    padding: 24px 16px;
+  }
+
+  .comment-box p {
+    font-size: 14px;
   }
 
   .left {
@@ -205,13 +261,21 @@ a {
   }
 
   .quotes {
-    top: -16px;
+    width: 50px;
+    top: 0;
+    left: calc(50% - 120px);
+  }
+
+  .slider-nav {
+    margin-top: 32px;
   }
 }
 
 @media (max-width: 360px) {
   .comment-box {
-    padding: 32px 18px 64px;
+    width: 200px;
+    min-height: 180px;
+    padding: 20px 12px;
   }
 
   .left {
@@ -223,8 +287,12 @@ a {
   }
 
   .quotes {
-    width: 60px;
-    top: -16px;
-    left: calc(60% - 170px);
+    width: 40px;
+    top: -4px;
+    left: calc(50% - 100px);
+  }
+
+  h2 {
+    font-size: 22px;
   }
 }

@@ -1,4 +1,6 @@
-<section class="main-container max-width">
+<section class="bodi">
+
+        <section class="main-container max-width">
   <app-nav></app-nav>
 
   <div class="back-btn"></div>
@@ -9,7 +11,7 @@
     </h1>
 
     @for (section of sections; track section.title) {
-      <div class="text">
+      <div class="text" [id]="section.id || null">
         <h3>
           {{ section.title | translate }}
         </h3>
@@ -28,4 +30,6 @@
   </section>
 
   <app-footer></app-footer>
+</section>
+
 </section>

@@ -1,4 +1,24 @@
 <section class="contact-me-container max-width">
+  @if (showSuccessMessage) {
+    <div class="success-overlay" (click)="closeSuccessMessage()">
+      <div class="success-card" (click)="$event.stopPropagation()">
+        <div class="success-icon">
+          <span></span>
+        </div>
+
+        <h2>
+          {{ 'CONTACT.SUCCESS_TITLE' | translate }}
+        </h2>
+
+        <p>
+          {{ 'CONTACT.SUCCESS_MESSAGE' | translate }}
+        </p>
+
+        <button class="success-btn" type="button" (click)="closeSuccessMessage()">OK</button>
+      </div>
+    </div>
+  }
+
   <div class="contact-me-text-container">
     <h3>
       {{ 'CONTACT.TITLE' | translate }}
@@ -33,66 +53,98 @@
     <form class="form-container" [formGroup]="contactForm" (ngSubmit)="sendMail()">
       <div class="line"></div>
 
-      <label for="name">
-        {{ 'CONTACT.NAME_LABEL' | translate }}
-      </label>
+      <div class="field">
+        <label for="name">
+          {{ 'CONTACT.NAME_LABEL' | translate }}
+        </label>
 
-      <input
-        type="text"
-        id="name"
-        autocomplete="name"
-        [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate"
-        formControlName="name"
-      />
+        <input
+          type="text"
+          id="name"
+          autocomplete="name"
+          [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate"
+          formControlName="name"
+        />
 
-      <div class="line"></div>
-
-      <label for="email">
-        {{ 'CONTACT.EMAIL_LABEL' | translate }}
-      </label>
-
-      <input
-        type="email"
-        id="email"
-        autocomplete="email"
-        [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate"
-        formControlName="email"
-      />
+        @if (getError('name')) {
+          <span class="error-message">
+            {{ getError('name') | translate }}
+          </span>
+        }
+      </div>
 
       <div class="line"></div>
 
-      <label for="message">
-        {{ 'CONTACT.MESSAGE_LABEL' | translate }}
-      </label>
+      <div class="field">
+        <label for="email">
+          {{ 'CONTACT.EMAIL_LABEL' | translate }}
+        </label>
 
-      <textarea
-        id="message"
-        autocomplete="off"
-        rows="1"
-        maxlength="2500"
-        (input)="autoResize($event)"
-        [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate"
-        formControlName="message"
-      ></textarea>
+        <input
+          type="email"
+          id="email"
+          autocomplete="email"
+          [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate"
+          formControlName="email"
+        />
+
+        @if (getError('email')) {
+          <span class="error-message">
+            {{ getError('email') | translate }}
+          </span>
+        }
+      </div>
 
       <div class="line"></div>
 
-      <div class="checkbox-container" (click)="toggleCheckbox()">
-        <div class="checkmark" [class.checked]="isChecked">
-          @if (isChecked) {
-            <span class="checkmark-icon"></span>
-          }
+      <div class="field">
+        <label for="message">
+          {{ 'CONTACT.MESSAGE_LABEL' | translate }}
+        </label>
+
+        <textarea
+          id="message"
+          autocomplete="off"
+          rows="1"
+          maxlength="2500"
+          (input)="autoResize($event)"
+          [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate"
+          formControlName="message"
+        ></textarea>
+
+        @if (getError('message')) {
+          <span class="error-message">
+            {{ getError('message') | translate }}
+          </span>
+        }
+      </div>
+
+      <div class="line"></div>
+
+      <div class="field checkbox-field">
+        <div class="checkbox-container" (click)="toggleCheckbox()">
+          <div class="checkmark" [class.checked]="isChecked">
+            @if (isChecked) {
+              <span class="checkmark-icon"></span>
+            }
+          </div>
+
+          <span class="checkbox-text">
+            {{ 'CONTACT.PRIVACY_START' | translate }}
+
+            <a (click)="goToLegalNotice(); $event.stopPropagation()">
+              {{ 'CONTACT.PRIVACY_LINK' | translate }}
+            </a>
+
+            {{ 'CONTACT.PRIVACY_END' | translate }}
+          </span>
         </div>
 
-        <span class="checkbox-text">
-          {{ 'CONTACT.PRIVACY_START' | translate }}
-
-          <a href="" (click)="$event.stopPropagation()">
-            {{ 'CONTACT.PRIVACY_LINK' | translate }}
-          </a>
-
-          {{ 'CONTACT.PRIVACY_END' | translate }}
-        </span>
+        @if (getError('privacy')) {
+          <span class="error-message">
+            {{ getError('privacy') | translate }}
+          </span>
+        }
       </div>
 
       <button class="contact-me-btn" type="submit" [disabled]="contactForm.invalid">

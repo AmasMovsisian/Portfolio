@@ -1,17 +1,19 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { FragmentService } from '../../services/fragment.service';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, RouterLink],
   templateUrl: './nav.html',
   styleUrl: './nav.scss',
 })
 export class Nav {
   menuOpen = false;
+  private fragmentService = inject(FragmentService);
 
   constructor(
     public languageService: LanguageService,
@@ -32,14 +34,8 @@ export class Nav {
 
   goToHome() {
     this.closeMenu();
-
     if (this.router.url !== '/') {
-      this.router.navigate(['/']).then(() => {
-        document.getElementById('home')?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      });
+      this.router.navigate(['/']);
     } else {
       document.getElementById('home')?.scrollIntoView({
         behavior: 'smooth',
@@ -51,11 +47,8 @@ export class Nav {
   @HostListener('document:click', ['$event'])
   clickOutside(event: MouseEvent) {
     const target = event.target as HTMLElement;
-
     const clickedInsideMenu = target.closest('.mobile-menu');
-
     const clickedHamburger = target.closest('.hamburger-menu');
-
     if (!clickedInsideMenu && !clickedHamburger) {
       this.closeMenu();
     }

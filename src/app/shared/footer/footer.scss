@@ -2,14 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-
   padding-left: 96px;
   padding-right: 96px;
-}
-
-.max-width {
-  max-width: 1920px;
-  margin: 0 auto;
   padding-bottom: 64px;
 }
 
@@ -23,8 +17,13 @@
 .footer-logo {
   width: 60px;
   height: 108px;
-
   margin-bottom: 16px;
+  cursor: pointer;
+  transition: transform 125ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 p {
@@ -40,7 +39,6 @@ p {
   font-size: 18px;
   line-height: 120%;
   letter-spacing: 0%;
-
   color: #3dcfb6;
 }
 
@@ -63,10 +61,8 @@ p {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-
     opacity: 0;
     visibility: hidden;
-
     transition: all 125ms ease-in-out;
   }
 
@@ -76,7 +72,6 @@ p {
     font-size: 16px;
     line-height: 120%;
     color: #ffffff;
-
     transition: all 125ms ease-in-out;
   }
 

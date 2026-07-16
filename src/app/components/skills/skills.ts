@@ -1,24 +1,23 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, RouterLink],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })
 export class Skills {
   constructor(private languageService: LanguageService) {}
 
-get growthImage() {
-
-  return this.languageService.current() === 'de'
-    ? '/assets/Skills/Growth Mindset/Growth-DE.png'
-    : '/assets/Skills/Growth Mindset/Growth-EN.png';
-
-}
+  get growthImage() {
+    return this.languageService.current() === 'de'
+      ? '/assets/Skills/Growth Mindset/Growth-DE.png'
+      : '/assets/Skills/Growth Mindset/Growth-EN.png';
+  }
 
   frontEndIcons = [
     {

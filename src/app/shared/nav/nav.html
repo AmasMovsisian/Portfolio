@@ -1,5 +1,4 @@
 <nav>
-
   <img
     src="assets/amas-movsisian-logo.png"
     class="nav-logo mobile"
@@ -8,56 +7,44 @@
   />
 
   <div class="nav-left">
-
     <div class="language-switcher">
-
       <button
         class="language-option"
         [class.active]="languageService.current() === 'en'"
         (click)="changeLanguage('en')">
         EN
       </button>
-
       <button
         class="language-option"
         [class.active]="languageService.current() === 'de'"
         (click)="changeLanguage('de')">
         DE
       </button>
-
     </div>
 
-
     <div class="nav-links">
-
       <div class="point_hover">
-        <a href="#about">
+        <a routerLink="/" [fragment]="'about'" (click)="closeMenu()">
           {{ 'HEADER.NAV.ABOUT' | translate }}
         </a>
         <img src="assets/Hero_Section/point.png" class="point" />
       </div>
 
-
       <div class="point_hover">
-        <a href="#skills">
+        <a routerLink="/" [fragment]="'skills'" (click)="closeMenu()">
           {{ 'HEADER.NAV.SKILLS' | translate }}
         </a>
         <img src="assets/Hero_Section/point.png" class="point" />
       </div>
 
-
       <div class="point_hover">
-        <a href="#projects">
+        <a routerLink="/" [fragment]="'projects'" (click)="closeMenu()">
           {{ 'HEADER.NAV.PROJECTS' | translate }}
         </a>
         <img src="assets/Hero_Section/point.png" class="point" />
       </div>
-
-
     </div>
-
   </div>
-
 
   <img
     src="assets/amas-movsisian-logo.png"
@@ -66,66 +53,50 @@
     (click)="goToHome()"
   />
 
-
   <img
     class="hamburger-menu"
     src="assets/Hero_Section/Hamburger-menu.png"
     alt="Hamburger Menu"
     (click)="toggleMenu()"
   />
-
 </nav>
 
-
 <div class="mobile-menu" [class.open]="menuOpen">
-
-
   <div class="mobile-point-hover">
-    <a href="#about" (click)="closeMenu()">
+    <a routerLink="/" [fragment]="'about'" (click)="closeMenu()">
       {{ 'HEADER.NAV.ABOUT' | translate }}
     </a>
     <img src="assets/Hero_Section/point.png" alt="point" class="mobile-point" />
   </div>
 
-
   <div class="mobile-point-hover">
-    <a href="#skills" (click)="closeMenu()">
+    <a routerLink="/" [fragment]="'skills'" (click)="closeMenu()">
       {{ 'HEADER.NAV.SKILLS' | translate }}
     </a>
     <img src="assets/Hero_Section/point.png" alt="point" class="mobile-point" />
   </div>
 
-
   <div class="mobile-point-hover">
-    <a href="#projects" (click)="closeMenu()">
+    <a routerLink="/" [fragment]="'projects'" (click)="closeMenu()">
       {{ 'HEADER.NAV.PROJECTS' | translate }}
     </a>
     <img src="assets/Hero_Section/point.png" alt="point" class="mobile-point" />
   </div>
 
-
   <div class="mobile-language">
-
     <div class="language-switcher">
-
       <button
         class="language-option"
         [class.active]="languageService.current() === 'en'"
         (click)="changeLanguage('en')">
         EN
       </button>
-
-
       <button
         class="language-option"
         [class.active]="languageService.current() === 'de'"
         (click)="changeLanguage('de')">
         DE
       </button>
-
     </div>
-
   </div>
-
-
 </div>
