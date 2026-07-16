@@ -28,7 +28,8 @@ export class PortfolioDialog implements AfterViewInit {
 
   @Output() nextProject = new EventEmitter<void>();
 
-  @ViewChild('dialogContent') dialogContent!: ElementRef;
+  @ViewChild('dialogContent')
+  dialogContent?: ElementRef<HTMLElement>;
 
   constructor(
     @Inject(DIALOG_DATA) public data: any,
@@ -44,13 +45,9 @@ export class PortfolioDialog implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      const element = this.dialogContent.nativeElement;
-
-      element.scrollTo({
-        top: 0,
-        behavior: 'auto',
-      });
+    this.dialogContent?.nativeElement.scrollTo({
+      top: 0,
+      behavior: 'auto',
     });
   }
 
