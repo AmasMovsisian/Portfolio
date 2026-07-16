@@ -11,13 +11,15 @@
       <button
         class="language-option"
         [class.active]="languageService.current() === 'en'"
-        (click)="changeLanguage('en')">
+        (click)="changeLanguage('en')"
+      >
         EN
       </button>
       <button
         class="language-option"
         [class.active]="languageService.current() === 'de'"
-        (click)="changeLanguage('de')">
+        (click)="changeLanguage('de')"
+      >
         DE
       </button>
     </div>
@@ -46,12 +48,7 @@
     </div>
   </div>
 
-  <img
-    src="assets/amas-movsisian-logo.png"
-    class="nav-logo"
-    alt="Logo"
-    (click)="goToHome()"
-  />
+  <img src="assets/amas-movsisian-logo.png" class="nav-logo" alt="Logo" (click)="goToHome()" />
 
   <img
     class="hamburger-menu"
@@ -88,13 +85,15 @@
       <button
         class="language-option"
         [class.active]="languageService.current() === 'en'"
-        (click)="changeLanguage('en')">
+        (click)="changeLanguage('en')"
+      >
         EN
       </button>
       <button
         class="language-option"
         [class.active]="languageService.current() === 'de'"
-        (click)="changeLanguage('de')">
+        (click)="changeLanguage('de')"
+      >
         DE
       </button>
     </div>

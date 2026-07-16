@@ -8,9 +8,8 @@ describe('PortfolioDialog', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PortfolioDialog]
-    })
-    .compileComponents();
+      imports: [PortfolioDialog],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PortfolioDialog);
     component = fixture.componentInstance;

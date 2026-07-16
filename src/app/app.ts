@@ -33,10 +33,9 @@ export class App {
 
   iconsPathJoin: string[] = [
     '/assets/Portfolio-Dialog/Join/Angular.png',
-    '/assets/Portfolio-Dialog/Join/CSS.png',
-    '/assets/Portfolio-Dialog/Join/Firebase.png',
-    '/assets/Portfolio-Dialog/Join/HTML.png',
     '/assets/Portfolio-Dialog/Join/TypeScript.png',
+    '/assets/Portfolio-Dialog/Join/Firebase.png',
+
   ];
 
   iconsPathElPolloLoco: string[] = [

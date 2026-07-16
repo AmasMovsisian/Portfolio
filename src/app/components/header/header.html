@@ -1,88 +1,93 @@
 <section class="main-section">
   <div class="main-header max-width">
-  <app-nav></app-nav>
+    <app-nav></app-nav>
 
-  <section class="hero">
-    <div class="hero-heading">
-      <h3>
-        {{ 'HEADER.ROLE' | translate }}
-      </h3>
+    <section class="hero">
+      <div class="hero-heading">
+        <h3>
+          {{ 'HEADER.ROLE' | translate }}
+        </h3>
 
-      <h1>Amas Movsisian</h1>
+        <h1>Amas Movsisian</h1>
+      </div>
+
+      <div class="hero-actions">
+        <a routerLink="/" [fragment]="'projects'" class="hero-button">
+          <span class="btn-text">
+            {{ 'HEADER.CHECK_WORK' | translate }}
+          </span>
+        </a>
+
+        <a routerLink="/" [fragment]="'contact'" class="hero-button">
+          <span class="btn-text">
+            {{ 'HEADER.CONTACT' | translate }}
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <div class="slider-infinite">
+      <div class="slider-track">
+        @for (
+          item of [
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
+            25, 26, 27, 28, 29, 30,
+          ];
+          track $index
+        ) {
+          <div class="slide">
+            <img class="slider-points" src="assets/Hero_Section/point.png" />
+
+            <span class="slider-infinite-text">
+              {{ 'HEADER.SLIDER.REMOTE' | translate }}
+            </span>
+
+            <img class="slider-points" src="assets/Hero_Section/point.png" />
+
+            <span class="slider-infinite-text">
+              {{ 'HEADER.SLIDER.ROLE' | translate }}
+            </span>
+
+            <img class="slider-points" src="assets/Hero_Section/point.png" />
+
+            <span class="slider-infinite-text">
+              {{ 'HEADER.SLIDER.LOCATION' | translate }}
+            </span>
+
+            <img class="slider-points" src="assets/Hero_Section/point.png" />
+
+            <span class="slider-infinite-text">
+              {{ 'HEADER.SLIDER.STATUS' | translate }}
+            </span>
+          </div>
+        }
+      </div>
     </div>
 
-    <div class="hero-actions">
-      <a routerLink="/" [fragment]="'projects'" class="hero-button">
-        <span class="btn-text">
-          {{ 'HEADER.CHECK_WORK' | translate }}
-        </span>
-      </a>
+    <section class="hero-meta">
+      <div class="scroll-indicator">
+        <p class="scroll-arrow">
+          <span class="arrow-icon"> &#8595; </span>
+        </p>
 
-      <a routerLink="/" [fragment]="'contact'" class="hero-button">
-        <span class="btn-text">
-          {{ 'HEADER.CONTACT' | translate }}
-        </span>
-      </a>
-    </div>
-  </section>
+        <div class="scroll-line"></div>
+      </div>
 
-  <div class="slider-infinite">
-    <div class="slider-track">
-      @for (item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]; track $index) {
-        <div class="slide">
-          <img class="slider-points" src="assets/Hero_Section/point.png" />
+      <div class="hero-side-info">
+        <a class="email-link" href="mailto:Amas2017@icloud.com"> Amas2017@icloud.com </a>
 
-          <span class="slider-infinite-text">
-            {{ 'HEADER.SLIDER.REMOTE' | translate }}
-          </span>
+        <a
+          class="hero-side-logos github"
+          href="https://github.com/AmasMovsisian"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a>
 
-          <img class="slider-points" src="assets/Hero_Section/point.png" />
+        <a class="hero-side-logos mail" href="mailto:Amas2017@icloud.com"> </a>
 
-          <span class="slider-infinite-text">
-            {{ 'HEADER.SLIDER.ROLE' | translate }}
-          </span>
-
-          <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-          <span class="slider-infinite-text">
-            {{ 'HEADER.SLIDER.LOCATION' | translate }}
-          </span>
-
-          <img class="slider-points" src="assets/Hero_Section/point.png" />
-
-          <span class="slider-infinite-text">
-            {{ 'HEADER.SLIDER.STATUS' | translate }}
-          </span>
-        </div>
-      }
-    </div>
+        <div class="scroll-line-right"></div>
+      </div>
+    </section>
   </div>
-
-  <section class="hero-meta">
-    <div class="scroll-indicator">
-      <p class="scroll-arrow">
-        <span class="arrow-icon"> &#8595; </span>
-      </p>
-
-      <div class="scroll-line"></div>
-    </div>
-
-    <div class="hero-side-info">
-      <a class="email-link" href="mailto:Amas2017@icloud.com"> Amas2017@icloud.com </a>
-
-      <a
-        class="hero-side-logos github"
-        href="https://github.com/AmasMovsisian"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-      </a>
-
-      <a class="hero-side-logos mail" href="mailto:Amas2017@icloud.com"> </a>
-
-      <div class="scroll-line-right"></div>
-    </div>
-  </section>
-</div>
 </section>
-

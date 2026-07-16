@@ -6,14 +6,8 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [
-    Nav,
-    TranslatePipe,
-    RouterLink
-  ],
+  imports: [Nav, TranslatePipe, RouterLink],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
-export class Header {
-
-}
+export class Header {}

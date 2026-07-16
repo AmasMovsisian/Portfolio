@@ -17,7 +17,7 @@ export class Nav {
 
   constructor(
     public languageService: LanguageService,
-    private router: Router
+    private router: Router,
   ) {}
 
   changeLanguage(language: 'de' | 'en') {
@@ -39,7 +39,7 @@ export class Nav {
     } else {
       document.getElementById('home')?.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     }
   }

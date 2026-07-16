@@ -8,9 +8,8 @@ describe('References', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [References]
-    })
-    .compileComponents();
+      imports: [References],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(References);
     component = fixture.componentInstance;

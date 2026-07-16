@@ -151,27 +151,20 @@
     align-items: center;
   }
 
+  .portfolio-text-container,
+  .main-projects {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .project-text {
+    max-width: none;
+    width: 100%;
+  }
   .project-text:hover ~ .project-image {
     opacity: 0;
     pointer-events: none;
-  }
-
-  .portfolio {
-    align-self: flex-start;
-  }
-
-  .project-image {
-    position: absolute;
-    right: -62px;
-    top: 50%;
-    width: 315px;
-    height: 212px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-50%) translateY(0px);
-    transition:
-      opacity 0.3s ease,
-      transform 0.3s ease;
   }
 }
 

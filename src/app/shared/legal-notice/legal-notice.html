@@ -1,35 +1,33 @@
 <section class="main-section">
+  <section class="main-container max-width">
+    <app-nav></app-nav>
 
-        <section class="main-container max-width">
-  <app-nav></app-nav>
+    <div class="back-btn"></div>
 
-  <div class="back-btn"></div>
+    <section class="main-text-container multiline-text">
+      <h1>
+        {{ 'LEGAL.TITLE' | translate }}
+      </h1>
 
-  <section class="main-text-container multiline-text">
-    <h1>
-      {{ 'LEGAL.TITLE' | translate }}
-    </h1>
+      @for (section of sections; track section.title) {
+        <div class="text" [id]="section.id || null">
+          <h3>
+            {{ section.title | translate }}
+          </h3>
 
-    @for (section of sections; track section.title) {
-      <div class="text" [id]="section.id || null">
-        <h3>
-          {{ section.title | translate }}
-        </h3>
+          @for (text of section.texts; track text) {
+            <p>
+              {{ text | translate }}
+            </p>
+          }
+        </div>
+      }
 
-        @for (text of section.texts; track text) {
-          <p>
-            {{ text | translate }}
-          </p>
-        }
-      </div>
-    }
+      <p class="date">
+        {{ 'LEGAL.UPDATED' | translate }}
+      </p>
+    </section>
 
-    <p class="date">
-      {{ 'LEGAL.UPDATED' | translate }}
-    </p>
+    <app-footer></app-footer>
   </section>
-
-  <app-footer></app-footer>
-</section>
-
 </section>

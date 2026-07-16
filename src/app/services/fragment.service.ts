@@ -7,7 +7,6 @@ import { BehaviorSubject } from 'rxjs';
 export class FragmentService {
   private fragmentSource = new BehaviorSubject<string | null>(null);
   fragment$ = this.fragmentSource.asObservable();
-
   setFragment(fragment: string | null) {
     this.fragmentSource.next(fragment);
   }

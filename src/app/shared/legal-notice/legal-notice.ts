@@ -19,7 +19,7 @@ export class LegalNotice implements OnInit, AfterViewInit, OnDestroy {
   private subscription: Subscription = new Subscription();
 
   ngOnInit() {
-    this.subscription = this.fragmentService.fragment$.subscribe(fragment => {
+    this.subscription = this.fragmentService.fragment$.subscribe((fragment) => {
       if (fragment) {
         setTimeout(() => {
           this.scrollToFragment(fragment);

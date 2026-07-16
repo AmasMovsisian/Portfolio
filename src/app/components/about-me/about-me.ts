@@ -4,14 +4,11 @@ import { TranslatePipe } from '@ngx-translate/core';
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [
-    TranslatePipe
-  ],
+  imports: [TranslatePipe],
   templateUrl: './about-me.html',
   styleUrl: './about-me.scss',
 })
 export class AboutMe {
-
   @ViewChild('aboutImage') aboutImage!: ElementRef<HTMLDivElement>;
 
   private effectActivated = false;
@@ -33,5 +30,4 @@ export class AboutMe {
       }
     }
   }
-
 }
