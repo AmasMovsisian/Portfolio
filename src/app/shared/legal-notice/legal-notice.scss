@@ -40,9 +40,13 @@ h3 {
   color: #ffffff;
 }
 
-p {
-  color: #3dcfb6;
+#privacy_policy h3 {
+  font-family: 'FiraCode', monospace;
+  font-weight: 700;
+  font-size: 32px;
 }
+
+p,
 ul li {
   color: #3dcfb6;
 }
@@ -51,11 +55,6 @@ ul li {
   h1 {
     text-align: start;
   }
-
-  .main-text-container {
-    margin-left: 32px;
-    margin-right: 32px;
-  }
 }
 
 @media (max-width: 512px) {
@@ -63,7 +62,9 @@ ul li {
     color: #ffffff;
     font-size: 32px;
   }
+}
 
+@media (max-width: 800px) and (min-width: 393px) {
   .main-text-container {
     margin-left: 32px;
     margin-right: 32px;
