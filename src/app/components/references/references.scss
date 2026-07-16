@@ -73,7 +73,9 @@ h2 {
   background: #26524b;
   border: 1px solid #3dcfb6;
   padding: 64px;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
   cursor: pointer;
   z-index: 2;
 
@@ -101,7 +103,7 @@ h2 {
     p {
       font-size: 18px;
       white-space: nowrap;
-      
+
       &.comment-autor-txt {
         /* Basis-Stile für den Autoren-Text falls nötig */
       }
@@ -180,7 +182,6 @@ h2 {
   height: 8px;
   transition: all 0.3s ease;
 }
-
 
 @media (max-width: 768px) {
   .references-container {
@@ -271,9 +272,8 @@ h2 {
     width: 200px;
     min-height: 180px;
 
-
     .references-footer p.comment-autor-txt {
-      font-size: 16px; 
+      font-size: 16px;
     }
   }
 

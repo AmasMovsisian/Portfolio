@@ -17,6 +17,9 @@ export class LegalNotice implements OnInit, OnDestroy {
   private subscription = new Subscription();
   private observer: MutationObserver | null = null;
 
+  /**
+   * Array of legal notice sections with titles and translation keys for content.
+   */
   sections = [
     { title: 'LEGAL.IMPRINT_TITLE', texts: ['LEGAL.IMPRINT_TEXT'] },
     { title: 'LEGAL.CONTACT_TITLE', texts: ['LEGAL.CONTACT_TEXT'] },
@@ -58,6 +61,9 @@ export class LegalNotice implements OnInit, OnDestroy {
     { title: 'LEGAL.CHANGES_TITLE', texts: ['LEGAL.CHANGES_TEXT'] },
   ];
 
+  /**
+   * Subscribes to fragment changes and triggers scroll to the target element.
+   */
   ngOnInit() {
     this.subscription.add(
       this.fragmentService.fragment$.subscribe((fragment) => {
@@ -68,11 +74,19 @@ export class LegalNotice implements OnInit, OnDestroy {
     );
   }
 
+  /**
+   * Cleans up subscriptions and the MutationObserver on component destruction.
+   */
   ngOnDestroy() {
     this.subscription.unsubscribe();
     this.cleanupObserver();
   }
 
+  /**
+   * Waits for the target element to exist and scrolls to it.
+   * Uses MutationObserver if the element is not yet in the DOM.
+   * @param fragment - The element ID to scroll to.
+   */
   private observeAndScroll(fragment: string) {
     this.cleanupObserver();
 
@@ -96,12 +110,19 @@ export class LegalNotice implements OnInit, OnDestroy {
     });
   }
 
+  /**
+   * Executes a smooth scroll to the given element after a short delay.
+   * @param element - The DOM element to scroll to.
+   */
   private executeScroll(element: HTMLElement) {
     setTimeout(() => {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 100);
   }
 
+  /**
+   * Disconnects and clears the MutationObserver if active.
+   */
   private cleanupObserver() {
     if (this.observer) {
       this.observer.disconnect();

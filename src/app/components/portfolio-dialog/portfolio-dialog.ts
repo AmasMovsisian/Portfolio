@@ -18,16 +18,49 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './portfolio-dialog.scss',
 })
 export class PortfolioDialog implements AfterViewInit {
+  /**
+   * The project number/identifier.
+   */
   projectNumber: string;
+
+  /**
+   * The title of the project.
+   */
   title: string;
+
+  /**
+   * The translation key for the project description message.
+   */
   messageKey: string;
+
+  /**
+   * Array of icon class names or paths representing technologies used.
+   */
   icons: string[];
+
+  /**
+   * The file path to the main project image.
+   */
   mainImagePath: string;
+
+  /**
+   * The GitHub repository URL for the project.
+   */
   githubLink: string;
+
+  /**
+   * The live demo URL for the project.
+   */
   liveLink: string;
 
+  /**
+   * Emits when navigating to the next project.
+   */
   @Output() nextProject = new EventEmitter<void>();
 
+  /**
+   * Reference to the dialog content container element.
+   */
   @ViewChild('dialogContent')
   dialogContent?: ElementRef<HTMLElement>;
 
@@ -44,6 +77,9 @@ export class PortfolioDialog implements AfterViewInit {
     this.liveLink = data.liveLink || '';
   }
 
+  /**
+   * After the view initializes, scrolls the dialog content to the top.
+   */
   ngAfterViewInit() {
     this.dialogContent?.nativeElement.scrollTo({
       top: 0,
@@ -51,10 +87,16 @@ export class PortfolioDialog implements AfterViewInit {
     });
   }
 
+  /**
+   * Closes the dialog.
+   */
   closeDialog() {
     this.dialogRef.close();
   }
 
+  /**
+   * Emits the nextProject event to navigate to the next project.
+   */
   goToNextProject() {
     this.nextProject.emit();
   }

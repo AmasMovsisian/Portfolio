@@ -13,8 +13,19 @@ import emailjs from '@emailjs/browser';
   styleUrl: './contact-me.scss',
 })
 export class ContactMe {
+  /**
+   * Tracks the checkbox state for privacy policy agreement.
+   */
   isChecked = false;
+
+  /**
+   * Controls the visibility of the success message after form submission.
+   */
   showSuccessMessage = false;
+
+  /**
+   * Reactive form group for the contact form with validation rules.
+   */
   contactForm;
 
   private fragmentService = inject(FragmentService);
@@ -29,6 +40,9 @@ export class ContactMe {
     });
   }
 
+  /**
+   * Toggles the privacy checkbox state and updates the form control.
+   */
   toggleCheckbox() {
     this.isChecked = !this.isChecked;
 
@@ -39,10 +53,18 @@ export class ContactMe {
     this.contactForm.get('privacy')?.markAsTouched();
   }
 
+  /**
+   * Hides the success message overlay.
+   */
   closeSuccessMessage() {
     this.showSuccessMessage = false;
   }
 
+  /**
+   * Automatically adjusts the height of a textarea element based on its content.
+   * Caps the height at 250px.
+   * @param event - The input event triggered by the textarea.
+   */
   autoResize(event: Event) {
     const textarea = event.target as HTMLTextAreaElement;
 
@@ -53,6 +75,11 @@ export class ContactMe {
     textarea.style.height = `${Math.min(textarea.scrollHeight, maxHeight)}px`;
   }
 
+  /**
+   * Returns the translation key for the error message of a given form control.
+   * @param controlName - The name of the form control.
+   * @returns The translation key string, or an empty string if no error.
+   */
   getError(controlName: string): string {
     const control = this.contactForm.get(controlName);
 
@@ -86,12 +113,19 @@ export class ContactMe {
     }
   }
 
+  /**
+   * Navigates to the legal notice page and sets the fragment to the privacy policy section.
+   */
   goToLegalNotice() {
     this.router.navigate(['/legal-notice']).then(() => {
       this.fragmentService.setFragment('privacy_policy');
     });
   }
 
+  /**
+   * Validates the form and sends the email via EmailJS if valid.
+   * Resets the form and shows a success message on success.
+   */
   sendMail() {
     if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();

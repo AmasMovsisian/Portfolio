@@ -12,7 +12,11 @@ import { FragmentService } from '../../services/fragment.service';
   styleUrl: './nav.scss',
 })
 export class Nav {
+  /**
+   * Tracks whether the mobile menu is currently open.
+   */
   menuOpen = false;
+
   private fragmentService = inject(FragmentService);
 
   constructor(
@@ -20,18 +24,31 @@ export class Nav {
     private router: Router,
   ) {}
 
+  /**
+   * Changes the application language.
+   * @param language - The target language code ('de' or 'en').
+   */
   changeLanguage(language: 'de' | 'en') {
     this.languageService.change(language);
   }
 
+  /**
+   * Toggles the mobile menu open/closed state.
+   */
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
 
+  /**
+   * Closes the mobile menu.
+   */
   closeMenu() {
     this.menuOpen = false;
   }
 
+  /**
+   * Navigates to the home page or scrolls to the home section if already on the home page.
+   */
   goToHome() {
     this.closeMenu();
     if (this.router.url !== '/') {
@@ -44,6 +61,10 @@ export class Nav {
     }
   }
 
+  /**
+   * Listens for clicks outside the mobile menu and hamburger icon to close the menu.
+   * @param event - The mouse click event.
+   */
   @HostListener('document:click', ['$event'])
   clickOutside(event: MouseEvent) {
     const target = event.target as HTMLElement;

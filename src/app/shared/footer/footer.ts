@@ -12,6 +12,9 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class Footer {
   private router = inject(Router);
 
+  /**
+   * Navigates to the home page. If already on the home page, scrolls smoothly to the top.
+   */
   goToHome() {
     if (this.router.url === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' });

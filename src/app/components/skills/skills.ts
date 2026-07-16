@@ -13,12 +13,19 @@ import { RouterLink } from '@angular/router';
 export class Skills {
   constructor(private languageService: LanguageService) {}
 
+  /**
+   * Returns the appropriate growth mindset image path based on the current language.
+   * @returns The image path for German or English version.
+   */
   get growthImage() {
     return this.languageService.current() === 'de'
       ? '/assets/Skills/Growth Mindset/Growth-DE.png'
       : '/assets/Skills/Growth Mindset/Growth-EN.png';
   }
 
+  /**
+   * Array of front-end and back-end skill icons with their names and image paths.
+   */
   frontEndIcons = [
     {
       name: 'HTML',
