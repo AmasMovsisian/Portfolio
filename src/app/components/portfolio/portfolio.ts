@@ -10,6 +10,11 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class Portfolio {
   /**
+   * Emits when the Amasia project dialog should be opened.
+   */
+  @Output() openAmasiaDialog = new EventEmitter<void>();
+
+  /**
    * Emits when the Join project dialog should be opened.
    */
   @Output() openJoinDialog = new EventEmitter<void>();
@@ -23,6 +28,13 @@ export class Portfolio {
    * Emits when the Coderr project dialog should be opened.
    */
   @Output() openCoderrDialog = new EventEmitter<void>();
+
+  /**
+   * Triggers the openAmasiaDialog event.
+   */
+  onOpenAmasiaDialog() {
+    this.openAmasiaDialog.emit();
+  }
 
   /**
    * Triggers the openJoinDialog event.

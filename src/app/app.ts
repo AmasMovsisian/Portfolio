@@ -35,6 +35,18 @@ export class App {
   protected readonly title = signal('Portfolio');
 
   /**
+   * Icon paths for the Amasia project.
+   */
+  iconsPathAmasia: string[] = [
+    '/assets/Portfolio-Dialog/Amasia/Angular.png',
+    '/assets/Portfolio-Dialog/Amasia/TypeScript.png',
+    '/assets/Portfolio-Dialog/Amasia/ThreeJS.png',
+    '/assets/Portfolio-Dialog/Amasia/Maya.png',
+    '/assets/Portfolio-Dialog/Amasia/CreativeCloud.png',
+    '/assets/Portfolio-Dialog/Amasia/Houdini.png',
+  ];
+
+  /**
    * Icon paths for the Join project.
    */
   iconsPathJoin: string[] = [
@@ -67,6 +79,15 @@ export class App {
   projects = [
     {
       projectNumber: '01',
+      title: 'Amasia',
+      messageKey: 'PROJECTS.AMASIA.DESCRIPTION',
+      mainImagePath: '/assets/Portfolio-Dialog/Amasia/amasia-img.png',
+      icons: this.iconsPathAmasia,
+      githubLink: 'https://github.com/AmasMovsisian/AmasiaInteractive3D',
+      liveLink: 'https://amasia.amasmovsisian.com/',
+    },
+    {
+      projectNumber: '02',
       title: 'Join',
       messageKey: 'PROJECTS.JOIN.DESCRIPTION',
       mainImagePath: '/assets/Portfolio-Dialog/Join/Join-img.png',
@@ -75,7 +96,7 @@ export class App {
       liveLink: 'https://join.amasmovsisian.com/login',
     },
     {
-      projectNumber: '02',
+      projectNumber: '03',
       title: 'El Pollo Loco',
       messageKey: 'PROJECTS.POLLO.DESCRIPTION',
       mainImagePath: '/assets/Portfolio-Dialog/ElPolloLoco/ElPolloLoco-img.png',
@@ -84,7 +105,7 @@ export class App {
       liveLink: 'https://elpolloloco.amasmovsisian.com/',
     },
     {
-      projectNumber: '03',
+      projectNumber: '04',
       title: 'Coderr',
       messageKey: 'PROJECTS.CODERR.DESCRIPTION',
       mainImagePath: '/assets/Portfolio-Dialog/Coderr/Coderr.png',
@@ -99,24 +120,31 @@ export class App {
   private currentProjectIndex: number = 0;
 
   /**
+   * Returns the Amasia project data.
+   */
+  get amasiaProjectData() {
+    return this.projects[0];
+  }
+
+  /**
    * Returns the Join project data.
    */
   get joinProjectData() {
-    return this.projects[0];
+    return this.projects[1];
   }
 
   /**
    * Returns the El Pollo Loco project data.
    */
   get elPolloLocoProjectData() {
-    return this.projects[1];
+    return this.projects[2];
   }
 
   /**
    * Returns the Coderr project data.
    */
   get CoderrProjectData() {
-    return this.projects[2];
+    return this.projects[3];
   }
 
   /**
@@ -151,23 +179,30 @@ export class App {
   }
 
   /**
+   * Opens the portfolio dialog for the Amasia project.
+   */
+  openAmasiaDialog() {
+    this.openPortfolioDialog(0);
+  }
+
+  /**
    * Opens the portfolio dialog for the Join project.
    */
   openJoinDialog() {
-    this.openPortfolioDialog(0);
+    this.openPortfolioDialog(1);
   }
 
   /**
    * Opens the portfolio dialog for the El Pollo Loco project.
    */
   openElPolloLocoDialog() {
-    this.openPortfolioDialog(1);
+    this.openPortfolioDialog(2);
   }
 
   /**
    * Opens the portfolio dialog for the Coderr project.
    */
   openCoderrDialog() {
-    this.openPortfolioDialog(2);
+    this.openPortfolioDialog(3);
   }
 }

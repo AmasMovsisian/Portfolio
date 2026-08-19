@@ -64,16 +64,20 @@
   },
 
   "PROJECTS": {
+    "AMASIA": {
+      "DESCRIPTION": "Entwicklung einer immersiven 3D Webexperience mit eigenständigem Branding und einem individuell entwickelten visuellen Konzept. Umsetzung einer interaktiven 3D Webanwendung mit Angular, TypeScript und Three.js inklusive moderner UI/UX, responsiver Benutzeroberfläche und immersiver 3D Interaktionen. Erstellung, Aufbereitung und Integration von 3D Modellen, Texturen und Animationen für eine dynamische und visuell beeindruckende User Experience."
+    },
+
     "JOIN": {
-      "DESCRIPTION": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen und weise Benutzer sowie Kategorien zu."
+      "DESCRIPTION": "Task Manager inspiriert vom Kanban System. Erstelle und organisiere Aufgaben mit Drag and Drop Funktionen und weise Benutzer sowie Kategorien zu."
     },
 
     "POLLO": {
-      "DESCRIPTION": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe dabei, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
+      "DESCRIPTION": "Jump and Run Spiel mit objektorientiertem Ansatz. Hilf Pepe dabei, Münzen und Tabasco Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
     },
 
     "CODERR": {
-      "DESCRIPTION": "Coderr ist ein Freelancer-Marktplatz-Backend, entwickelt mit Django und Django REST Framework. Es verbindet Kunden mit Entwicklern über Projektanfragen und Serviceangebote und bietet eine leistungsstarke REST-API mit Authentifizierung, Autorisierung und Datenverwaltung."
+      "DESCRIPTION": "Coderr ist ein Freelancer Marktplatz Backend, entwickelt mit Django und Django REST Framework. Es verbindet Kunden mit Entwicklern über Projektanfragen und Serviceangebote und bietet eine leistungsstarke REST API mit Authentifizierung, Autorisierung und Datenverwaltung."
     }
   },
 
