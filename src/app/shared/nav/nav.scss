@@ -20,11 +20,11 @@ a {
   width: 60px;
   height: 108px;
   cursor: pointer;
-  transition: transform 0.2s ease;
-}
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 
-.nav-logo:hover {
-  transform: scale(1.05);
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .mobile {

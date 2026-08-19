@@ -10,6 +10,8 @@
   align-items: center;
   padding-left: 62px;
   padding-right: 62px;
+  white-space: pre-line;
+
 }
 
 .about-me-box-container {
@@ -56,6 +58,8 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
+
+
 
 @media (min-width: 1286px) {
   .about-me-image:hover::before {

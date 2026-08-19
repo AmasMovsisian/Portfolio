@@ -22,21 +22,21 @@
     "WHO": "Who I Am",
     "TITLE": "About me",
 
-    "TEXT_1": "I am a Full-Stack Developer passionate about creating modern and user focused digital solutions. With a background in Technical Design, I combine creativity, design thinking and technical skills to build engaging experiences.",
+    "TEXT_1": "As a Full Stack Developer, I combine my expertise in 3D and design with my passion for programming. Through my technical design education and scripting in my 3D workflows, programming became the logical next step for me.",
 
-    "TEXT_2": "Through programming and personal 3D projects, I continuously expand my knowledge and enjoy exploring new technologies. My name is Amas Movsisyan, I am based in Germany and open to new challenges, collaborations and exciting opportunities.",
+    "TEXT_2": "Today, I develop modern web applications and interactive 3D experiences with Angular, TypeScript, Django and Three.js. I combine UI/UX, 3D and technology to create intuitive and visually engaging digital experiences.",
 
-    "ITEM_1": "Based in Germany and open to remote work and new opportunities.",
+    "ITEM_1": "I work from Germany and am open to remote collaboration, exciting projects and new opportunities.",
 
-    "ITEM_2": "Passionate about learning new technologies and improving my skills.",
+    "ITEM_2": "I enjoy experimenting with new technologies and continuously developing my skills through personal projects.",
 
-    "ITEM_3": "Creative problem-solving with a focus on efficient solutions."
+    "ITEM_3": "I combine creativity, design and technical thinking to create intuitive and well considered solutions."
   },
   "SKILLS": {
     "TECHNOLOGIES": "Technologies",
     "TITLE": "Skill Set",
 
-    "DESCRIPTION": "I work with modern web technologies to create responsive and user-friendly applications. My background in design helps me combine clean code with strong visual concepts and a focus on user experience. I am constantly learning new technologies and improving my skills to build efficient and creative solutions.",
+    "DESCRIPTION": "I develop modern and responsive web applications with a strong focus on UI/UX. My background in design allows me to combine clean code with visual design and a strong user experience.\nThrough personal projects and exploring new technologies, I continuously expand my skills to create creative, efficient and well considered solutions.",
 
     "NEED": "You need",
 
@@ -149,7 +149,7 @@
     "IMPRINT_TEXT": "Amas Movsisyan\n Wilhelmstrasse 79\n 59439 Holzwickede\nGermany",
 
     "CONTACT_TITLE": "Contact",
-    "CONTACT_TEXT": "Email: amas2017@icloud.com",
+    "CONTACT_TEXT": "Email: contact@amasmovsisian.com",
 
     "ABOUT_TITLE": "About this Website",
     "ABOUT_TEXT_1": "This website is a personal portfolio developed and maintained by Amas Movsisyan. It was created to showcase web development projects, technical skills, and professional experience.",
@@ -173,7 +173,7 @@
 
     "RESPONSIBLE_TITLE": "Responsible Person",
     "RESPONSIBLE_TEXT_1": "The person responsible for data processing on this website is:",
-    "RESPONSIBLE_TEXT_2": "Amas Movsisyan Wilhelmstraße 79 59439 Holzwickede Germany Email: amas2017@icloud.com",
+    "RESPONSIBLE_TEXT_2": "Amas Movsisyan Wilhelmstraße 79 59439 Holzwickede Germany Email: contact@amasmovsisian.com",
 
     "HOSTING_TITLE": "Hosting",
     "HOSTING_TEXT_1": "This website is hosted using GitHub Pages, a hosting service provided by GitHub, Inc.",
