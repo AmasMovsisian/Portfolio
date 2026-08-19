@@ -61,12 +61,15 @@
   },
 
   "PROJECTS": {
+    "AMASIA": {
+      "DESCRIPTION": "Development of an immersive 3D web experience with its own distinctive branding and visual concept. Interactive 3D web application built with Angular, TypeScript, and Three.js, featuring modern UI/UX, a responsive interface, and immersive 3D interactions. Creation, optimization, and integration of 3D models, textures, and animations to deliver a dynamic, visually striking, and engaging user experience."
+    },
     "JOIN": {
       "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
     },
 
     "POLLO": {
-      "DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+      "DESCRIPTION": "Jump, run and throw game based on object oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
     },
 
     "CODERR": {
