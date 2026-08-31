@@ -65,7 +65,7 @@
 
   "PROJECTS": {
     "AMASIA": {
-      "DESCRIPTION": "Entwicklung einer immersiven 3D Webexperience mit eigenständigem Branding und einem individuell entwickelten visuellen Konzept. Umsetzung einer interaktiven 3D Webanwendung mit Angular, TypeScript und Three.js inklusive moderner UI/UX, responsiver Benutzeroberfläche und immersiver 3D Interaktionen. Erstellung, Aufbereitung und Integration von 3D Modellen, Texturen und Animationen für eine dynamische und visuell beeindruckende User Experience."
+      "DESCRIPTION": "Entwicklung einer immersiven 3D Webexperience mit eigenständigem Branding und individuellem visuellen Konzept. Umsetzung einer interaktiven 3D Webanwendung mit Angular, TypeScript und Three.js inklusive moderner, responsiver UI/UX. Erstellung und Integration von 3D Modellen, Texturen und Animationen für eine dynamische, visuell beeindruckende User Experience."
     },
 
     "JOIN": {

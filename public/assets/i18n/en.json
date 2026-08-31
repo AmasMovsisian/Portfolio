@@ -62,7 +62,7 @@
 
   "PROJECTS": {
     "AMASIA": {
-      "DESCRIPTION": "Development of an immersive 3D web experience with its own distinctive branding and visual concept. Interactive 3D web application built with Angular, TypeScript, and Three.js, featuring modern UI/UX, a responsive interface, and immersive 3D interactions. Creation, optimization, and integration of 3D models, textures, and animations to deliver a dynamic, visually striking, and engaging user experience."
+      "DESCRIPTION": "Development of an immersive 3D web experience with distinctive branding and a custom visual concept. Interactive 3D web application built with Angular, TypeScript, and Three.js, featuring modern, responsive UI/UX and immersive interactions. Creation and integration of 3D models, textures, and animations for a dynamic, visually striking user experience."
     },
     "JOIN": {
       "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
